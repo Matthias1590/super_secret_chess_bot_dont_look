@@ -1,0 +1,7 @@
+src/main.c:106: < 'uci'
+src/main.c:106: < 'isready'
+src/main.c:106: < 'ucinewgame'
+src/main.c:106: < 'position startpos'
+src/main.c:106: < 'position startpos moves d2d4'
+src/main.c:106: < 'isready'
+src/main.c:106: < 'go wtime 300000 btime 300000 movestogo 40'

@@ -1,0 +1,16 @@
+{
+	"files.associations": {
+		"move.h": "c",
+		"uci.h": "c",
+		"random": "c",
+		"limits": "c",
+		"array": "cpp",
+		"compare": "cpp",
+		"functional": "cpp",
+		"ranges": "cpp",
+		"tuple": "cpp",
+		"type_traits": "cpp",
+		"utility": "cpp",
+		"evaluate.h": "c"
+	}
+}
