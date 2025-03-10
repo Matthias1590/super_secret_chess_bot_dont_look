@@ -112,6 +112,9 @@ void do_move(struct position *pos, struct move move) {
 
 		break;
 	}
+
+	// TODOOO: Optimize
+	set_bbs(pos);
 }
 
 int is_legal(const struct position *pos, struct move move) {

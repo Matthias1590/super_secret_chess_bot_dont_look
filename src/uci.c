@@ -52,7 +52,7 @@ char *get_token(char *string, char *store) {
 	return NULL;
 }
 
-void uci_position(struct position *pos, char *token, char *store) {
+void uci_position(struct position *pos, char *token, char *store, struct move *last_move) {
 	token = get_token(token, store);
 
 	if (token && !strcmp(token, "startpos")) {
@@ -79,10 +79,13 @@ void uci_position(struct position *pos, char *token, char *store) {
 			struct move move;
 
 			if (parse_move(&move, token) == SUCCESS) {
+				if (last_move) *last_move = move;
 				do_move(pos, move);
 			}
 		}
 	}
+
+	set_bbs(pos);
 }
 
 static void uci_go(const struct position *pos, char *token, char *store) {
@@ -136,44 +139,4 @@ static void uci_go(const struct position *pos, char *token, char *store) {
 	}
 
 	printf("bestmove %s\n", buffer);
-}
-
-void uci_run(const char *name, const char *author) {
-	char *line;
-	int quit = 0;
-	struct position pos;
-
-	while (!quit && (line = get_line(stdin))) {
-		char *token = line;
-		char store = *token;
-
-		*token = '\0';
-
-		while ((token = get_token(token, &store))) {
-			if (!strcmp(token, "quit")) {
-				quit = 1;
-			} else if (!strcmp(token, "uci")) {
-				printf("id name %s\n", name);
-				printf("id author %s\n", author);
-				printf("uciok\n");
-			} else if (!strcmp(token, "isready")) {
-				printf("readyok\n");
-			} else if (!strcmp(token, "position")) {
-				uci_position(&pos, token, &store);
-			} else if (!strcmp(token, "go")) {
-				uci_go(&pos, token, &store);
-			} else if (!strcmp(token, "setoption")) {
-				break;
-			} else if (!strcmp(token, "register")) {
-				break;
-			} else {
-				continue;
-			}
-
-			break;
-		}
-
-		free(line);
-		fflush(stdout);
-	}
 }

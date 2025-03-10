@@ -11,6 +11,9 @@
 		"tuple": "cpp",
 		"type_traits": "cpp",
 		"utility": "cpp",
-		"evaluate.h": "c"
+		"evaluate.h": "c",
+		"position.h": "c",
+		"pst.h": "c",
+		"generate.h": "c"
 	}
 }

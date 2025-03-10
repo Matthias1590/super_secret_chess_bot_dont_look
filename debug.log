@@ -1,7 +1,175 @@
-src/main.c:106: < 'uci'
-src/main.c:106: < 'isready'
-src/main.c:106: < 'ucinewgame'
-src/main.c:106: < 'position startpos'
-src/main.c:106: < 'position startpos moves d2d4'
-src/main.c:106: < 'isready'
-src/main.c:106: < 'go wtime 300000 btime 300000 movestogo 40'
+src/main.c:172: < 'uci'
+src/main.c:77: > 'id name checkmate.exe'
+src/main.c:77: > 'id author amel-fou mapatenk mwijnsma'
+src/main.c:77: > 'uciok'
+src/main.c:172: < 'isready'
+src/main.c:77: > 'readyok'
+src/main.c:172: < 'ucinewgame'
+src/main.c:172: < 'position startpos'
+src/main.c:172: < 'position startpos moves e2e4'
+src/main.c:172: < 'isready'
+src/main.c:77: > 'readyok'
+src/main.c:172: < 'go wtime 300000 btime 300000 movestogo 40'
+src/main.c:201: state = THINKING
+src/main.c:77: > 'info depth 2 score cp 55'
+src/main.c:77: > 'info depth 3 score cp 88'
+src/main.c:77: > 'info depth 4 score cp 63'
+src/main.c:77: > 'info depth 5 score cp 76'
+src/main.c:77: > 'info depth 6 score cp 32'
+src/main.c:77: > 'bestmove b8c6'
+src/main.c:77: > 'predicted opponent move b1c3'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 57'
+src/main.c:77: > 'info depth 3 score cp 84'
+src/main.c:77: > 'info depth 4 score cp 32'
+src/main.c:77: > 'info depth 5 score cp 64'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4'
+src/main.c:172: < 'isready'
+src/main.c:198: state = WAITING
+src/main.c:77: > 'readyok'
+src/main.c:493: Search was cancelled
+src/main.c:172: < 'go wtime 298076 btime 297917 movestogo 39'
+src/main.c:201: state = THINKING
+src/main.c:77: > 'info depth 2 score cp 68'
+src/main.c:77: > 'info depth 3 score cp 88'
+src/main.c:77: > 'info depth 4 score cp 63'
+src/main.c:77: > 'info depth 5 score cp 73'
+src/main.c:77: > 'info depth 6 score cp 39'
+src/main.c:77: > 'bestmove e7e6'
+src/main.c:77: > 'predicted opponent move f1e2'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 83'
+src/main.c:77: > 'info depth 3 score cp 101'
+src/main.c:77: > 'info depth 4 score cp 39'
+src/main.c:77: > 'info depth 5 score cp 73'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4'
+src/main.c:172: < 'isready'
+src/main.c:198: state = WAITING
+src/main.c:77: > 'readyok'
+src/main.c:493: Search was cancelled
+src/main.c:172: < 'go wtime 295529 btime 292696 movestogo 38'
+src/main.c:201: state = THINKING
+src/main.c:77: > 'info depth 2 score cp 107'
+src/main.c:77: > 'info depth 3 score cp 116'
+src/main.c:77: > 'info depth 4 score cp 114'
+src/main.c:77: > 'info depth 5 score cp 134'
+src/main.c:77: > 'info depth 6 score cp 123'
+src/main.c:77: > 'bestmove f8b4'
+src/main.c:77: > 'predicted opponent move e1e2'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 131'
+src/main.c:77: > 'info depth 3 score cp 152'
+src/main.c:77: > 'info depth 4 score cp 123'
+src/main.c:77: > 'info depth 5 score cp 126'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3'
+src/main.c:172: < 'isready'
+src/main.c:198: state = WAITING
+src/main.c:77: > 'readyok'
+src/main.c:493: Search was cancelled
+src/main.c:172: < 'go wtime 292767 btime 285820 movestogo 37'
+src/main.c:201: state = THINKING
+src/main.c:77: > 'info depth 2 score cp 126'
+src/main.c:77: > 'info depth 3 score cp 143'
+src/main.c:77: > 'info depth 4 score cp 126'
+src/main.c:77: > 'info depth 5 score cp 153'
+src/main.c:77: > 'info depth 6 score cp 118'
+src/main.c:77: > 'bestmove d7d5'
+src/main.c:77: > 'predicted opponent move e4d5'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 125'
+src/main.c:77: > 'info depth 3 score cp 125'
+src/main.c:77: > 'info depth 4 score cp 118'
+src/main.c:77: > 'info depth 5 score cp 125'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5'
+src/main.c:172: < 'isready'
+src/main.c:562: Predicted opponent move correctly
+src/main.c:201: state = THINKING
+src/main.c:77: > 'readyok'
+src/main.c:172: < 'go wtime 291734 btime 278465 movestogo 36'
+src/main.c:493: Search was cancelled
+src/main.c:77: > 'bestmove b4c3'
+src/main.c:77: > 'predicted opponent move b2c3'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 106'
+src/main.c:77: > 'info depth 3 score cp 125'
+src/main.c:77: > 'info depth 4 score cp 80'
+src/main.c:77: > 'info depth 5 score cp 116'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3'
+src/main.c:172: < 'isready'
+src/main.c:562: Predicted opponent move correctly
+src/main.c:201: state = THINKING
+src/main.c:77: > 'readyok'
+src/main.c:172: < 'go wtime 290226 btime 278465 movestogo 35'
+src/main.c:493: Search was cancelled
+src/main.c:77: > 'bestmove e6d5'
+src/main.c:77: > 'predicted opponent move c4d5'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 80'
+src/main.c:77: > 'info depth 3 score cp 116'
+src/main.c:77: > 'info depth 4 score cp 70'
+src/main.c:77: > 'info depth 5 score cp 112'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3'
+src/main.c:172: < 'isready'
+src/main.c:198: state = WAITING
+src/main.c:77: > 'readyok'
+src/main.c:493: Search was cancelled
+src/main.c:172: < 'go wtime 289029 btime 278456 movestogo 34'
+src/main.c:201: state = THINKING
+src/main.c:77: > 'info depth 2 score cp 117'
+src/main.c:77: > 'info depth 3 score cp 144'
+src/main.c:77: > 'info depth 4 score cp 106'
+src/main.c:77: > 'info depth 5 score cp 123'
+src/main.c:77: > 'info depth 6 score cp 98'
+src/main.c:77: > 'bestmove g8f6'
+src/main.c:77: > 'predicted opponent move c4d5'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 106'
+src/main.c:77: > 'info depth 3 score cp 123'
+src/main.c:77: > 'info depth 4 score cp 98'
+src/main.c:77: > 'info depth 5 score cp 126'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3 g8f6 c1g5'
+src/main.c:172: < 'isready'
+src/main.c:198: state = WAITING
+src/main.c:77: > 'readyok'
+src/main.c:493: Search was cancelled
+src/main.c:172: < 'go wtime 284475 btime 273595 movestogo 33'
+src/main.c:201: state = THINKING
+src/main.c:77: > 'info depth 2 score cp 136'
+src/main.c:77: > 'info depth 3 score cp 123'
+src/main.c:77: > 'info depth 4 score cp 120'
+src/main.c:77: > 'info depth 5 score cp 122'
+src/main.c:77: > 'info depth 6 score cp 104'
+src/main.c:77: > 'bestmove e8g8'
+src/main.c:77: > 'predicted opponent move c4d5'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 126'
+src/main.c:77: > 'info depth 3 score cp 126'
+src/main.c:77: > 'info depth 4 score cp 104'
+src/main.c:77: > 'info depth 5 score cp 125'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3 g8f6 c1g5 e8g8 d1c2'
+src/main.c:172: < 'isready'
+src/main.c:198: state = WAITING
+src/main.c:77: > 'readyok'
+src/main.c:493: Search was cancelled
+src/main.c:172: < 'go wtime 281917 btime 267149 movestogo 32'
+src/main.c:201: state = THINKING
+src/main.c:77: > 'info depth 2 score cp 174'
+src/main.c:77: > 'info depth 3 score cp 169'
+src/main.c:77: > 'info depth 4 score cp 122'
+src/main.c:77: > 'info depth 5 score cp 133'
+src/main.c:77: > 'info depth 6 score cp 120'
+src/main.c:77: > 'bestmove c8e6'
+src/main.c:77: > 'predicted opponent move c4c5'
+src/main.c:205: state = PONDERING
+src/main.c:77: > 'info depth 2 score cp 178'
+src/main.c:77: > 'info depth 3 score cp 178'
+src/main.c:77: > 'info depth 4 score cp 120'
+src/main.c:77: > 'info depth 5 score cp 146'
+src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3 g8f6 c1g5 e8g8 d1c2 c8e6 c4d5'
+src/main.c:172: < 'isready'
+src/main.c:198: state = WAITING
+src/main.c:77: > 'readyok'
+src/main.c:172: < 'go wtime 279954 btime 261789 movestogo 31'
+src/main.c:201: state = THINKING
+src/main.c:493: Search was cancelled
+src/main.c:77: > 'bestmove a5a9'

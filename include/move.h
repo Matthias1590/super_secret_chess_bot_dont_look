@@ -29,7 +29,7 @@ struct move {
 	/* the type of piece that is being promoted to, if any.                  */
 	int promotion_type;
 
-	int score;
+	long long score;
 };
 
 /* create a move from the given parameters.                                  */
