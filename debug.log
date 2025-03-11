@@ -1,175 +1,1041 @@
-src/main.c:172: < 'uci'
-src/main.c:77: > 'id name checkmate.exe'
-src/main.c:77: > 'id author amel-fou mapatenk mwijnsma'
-src/main.c:77: > 'uciok'
-src/main.c:172: < 'isready'
-src/main.c:77: > 'readyok'
-src/main.c:172: < 'ucinewgame'
-src/main.c:172: < 'position startpos'
-src/main.c:172: < 'position startpos moves e2e4'
-src/main.c:172: < 'isready'
-src/main.c:77: > 'readyok'
-src/main.c:172: < 'go wtime 300000 btime 300000 movestogo 40'
-src/main.c:201: state = THINKING
-src/main.c:77: > 'info depth 2 score cp 55'
-src/main.c:77: > 'info depth 3 score cp 88'
-src/main.c:77: > 'info depth 4 score cp 63'
-src/main.c:77: > 'info depth 5 score cp 76'
-src/main.c:77: > 'info depth 6 score cp 32'
-src/main.c:77: > 'bestmove b8c6'
-src/main.c:77: > 'predicted opponent move b1c3'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 57'
-src/main.c:77: > 'info depth 3 score cp 84'
-src/main.c:77: > 'info depth 4 score cp 32'
-src/main.c:77: > 'info depth 5 score cp 64'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4'
-src/main.c:172: < 'isready'
-src/main.c:198: state = WAITING
-src/main.c:77: > 'readyok'
-src/main.c:493: Search was cancelled
-src/main.c:172: < 'go wtime 298076 btime 297917 movestogo 39'
-src/main.c:201: state = THINKING
-src/main.c:77: > 'info depth 2 score cp 68'
-src/main.c:77: > 'info depth 3 score cp 88'
-src/main.c:77: > 'info depth 4 score cp 63'
-src/main.c:77: > 'info depth 5 score cp 73'
-src/main.c:77: > 'info depth 6 score cp 39'
-src/main.c:77: > 'bestmove e7e6'
-src/main.c:77: > 'predicted opponent move f1e2'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 83'
-src/main.c:77: > 'info depth 3 score cp 101'
-src/main.c:77: > 'info depth 4 score cp 39'
-src/main.c:77: > 'info depth 5 score cp 73'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4'
-src/main.c:172: < 'isready'
-src/main.c:198: state = WAITING
-src/main.c:77: > 'readyok'
-src/main.c:493: Search was cancelled
-src/main.c:172: < 'go wtime 295529 btime 292696 movestogo 38'
-src/main.c:201: state = THINKING
-src/main.c:77: > 'info depth 2 score cp 107'
-src/main.c:77: > 'info depth 3 score cp 116'
-src/main.c:77: > 'info depth 4 score cp 114'
-src/main.c:77: > 'info depth 5 score cp 134'
-src/main.c:77: > 'info depth 6 score cp 123'
-src/main.c:77: > 'bestmove f8b4'
-src/main.c:77: > 'predicted opponent move e1e2'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 131'
-src/main.c:77: > 'info depth 3 score cp 152'
-src/main.c:77: > 'info depth 4 score cp 123'
-src/main.c:77: > 'info depth 5 score cp 126'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3'
-src/main.c:172: < 'isready'
-src/main.c:198: state = WAITING
-src/main.c:77: > 'readyok'
-src/main.c:493: Search was cancelled
-src/main.c:172: < 'go wtime 292767 btime 285820 movestogo 37'
-src/main.c:201: state = THINKING
-src/main.c:77: > 'info depth 2 score cp 126'
-src/main.c:77: > 'info depth 3 score cp 143'
-src/main.c:77: > 'info depth 4 score cp 126'
-src/main.c:77: > 'info depth 5 score cp 153'
-src/main.c:77: > 'info depth 6 score cp 118'
-src/main.c:77: > 'bestmove d7d5'
-src/main.c:77: > 'predicted opponent move e4d5'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 125'
-src/main.c:77: > 'info depth 3 score cp 125'
-src/main.c:77: > 'info depth 4 score cp 118'
-src/main.c:77: > 'info depth 5 score cp 125'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5'
-src/main.c:172: < 'isready'
-src/main.c:562: Predicted opponent move correctly
-src/main.c:201: state = THINKING
-src/main.c:77: > 'readyok'
-src/main.c:172: < 'go wtime 291734 btime 278465 movestogo 36'
-src/main.c:493: Search was cancelled
-src/main.c:77: > 'bestmove b4c3'
-src/main.c:77: > 'predicted opponent move b2c3'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 106'
-src/main.c:77: > 'info depth 3 score cp 125'
-src/main.c:77: > 'info depth 4 score cp 80'
-src/main.c:77: > 'info depth 5 score cp 116'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3'
-src/main.c:172: < 'isready'
-src/main.c:562: Predicted opponent move correctly
-src/main.c:201: state = THINKING
-src/main.c:77: > 'readyok'
-src/main.c:172: < 'go wtime 290226 btime 278465 movestogo 35'
-src/main.c:493: Search was cancelled
-src/main.c:77: > 'bestmove e6d5'
-src/main.c:77: > 'predicted opponent move c4d5'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 80'
-src/main.c:77: > 'info depth 3 score cp 116'
-src/main.c:77: > 'info depth 4 score cp 70'
-src/main.c:77: > 'info depth 5 score cp 112'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3'
-src/main.c:172: < 'isready'
-src/main.c:198: state = WAITING
-src/main.c:77: > 'readyok'
-src/main.c:493: Search was cancelled
-src/main.c:172: < 'go wtime 289029 btime 278456 movestogo 34'
-src/main.c:201: state = THINKING
-src/main.c:77: > 'info depth 2 score cp 117'
-src/main.c:77: > 'info depth 3 score cp 144'
-src/main.c:77: > 'info depth 4 score cp 106'
-src/main.c:77: > 'info depth 5 score cp 123'
-src/main.c:77: > 'info depth 6 score cp 98'
-src/main.c:77: > 'bestmove g8f6'
-src/main.c:77: > 'predicted opponent move c4d5'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 106'
-src/main.c:77: > 'info depth 3 score cp 123'
-src/main.c:77: > 'info depth 4 score cp 98'
-src/main.c:77: > 'info depth 5 score cp 126'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3 g8f6 c1g5'
-src/main.c:172: < 'isready'
-src/main.c:198: state = WAITING
-src/main.c:77: > 'readyok'
-src/main.c:493: Search was cancelled
-src/main.c:172: < 'go wtime 284475 btime 273595 movestogo 33'
-src/main.c:201: state = THINKING
-src/main.c:77: > 'info depth 2 score cp 136'
-src/main.c:77: > 'info depth 3 score cp 123'
-src/main.c:77: > 'info depth 4 score cp 120'
-src/main.c:77: > 'info depth 5 score cp 122'
-src/main.c:77: > 'info depth 6 score cp 104'
-src/main.c:77: > 'bestmove e8g8'
-src/main.c:77: > 'predicted opponent move c4d5'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 126'
-src/main.c:77: > 'info depth 3 score cp 126'
-src/main.c:77: > 'info depth 4 score cp 104'
-src/main.c:77: > 'info depth 5 score cp 125'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3 g8f6 c1g5 e8g8 d1c2'
-src/main.c:172: < 'isready'
-src/main.c:198: state = WAITING
-src/main.c:77: > 'readyok'
-src/main.c:493: Search was cancelled
-src/main.c:172: < 'go wtime 281917 btime 267149 movestogo 32'
-src/main.c:201: state = THINKING
-src/main.c:77: > 'info depth 2 score cp 174'
-src/main.c:77: > 'info depth 3 score cp 169'
-src/main.c:77: > 'info depth 4 score cp 122'
-src/main.c:77: > 'info depth 5 score cp 133'
-src/main.c:77: > 'info depth 6 score cp 120'
-src/main.c:77: > 'bestmove c8e6'
-src/main.c:77: > 'predicted opponent move c4c5'
-src/main.c:205: state = PONDERING
-src/main.c:77: > 'info depth 2 score cp 178'
-src/main.c:77: > 'info depth 3 score cp 178'
-src/main.c:77: > 'info depth 4 score cp 120'
-src/main.c:77: > 'info depth 5 score cp 146'
-src/main.c:172: < 'position startpos moves e2e4 b8c6 d2d4 e7e6 c2c4 f8b4 b1c3 d7d5 e4d5 b4c3 b2c3 e6d5 g1f3 g8f6 c1g5 e8g8 d1c2 c8e6 c4d5'
-src/main.c:172: < 'isready'
-src/main.c:198: state = WAITING
-src/main.c:77: > 'readyok'
-src/main.c:172: < 'go wtime 279954 btime 261789 movestogo 31'
-src/main.c:201: state = THINKING
-src/main.c:493: Search was cancelled
-src/main.c:77: > 'bestmove a5a9'
+src/main.c:161: < 'uci'
+src/main.c:78: > 'id name checkmate.exe'
+src/main.c:78: > 'id author amel-fou mapatenk mwijnsma'
+src/main.c:78: > 'uciok'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'ucinewgame'
+src/main.c:161: < 'position startpos'
+src/main.c:161: < 'position startpos moves d2d4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 300000 btime 300000 movestogo 40'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:78: > 'info depth 2 score cp 55'
+src/main.c:78: > 'info depth 3 score cp 90'
+src/main.c:78: > 'info depth 4 score cp 54'
+src/main.c:78: > 'info depth 5 score cp 87'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove g8f6'
+src/main.c:78: > 'info string pondering g1f3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 55'
+src/main.c:78: > 'info depth 3 score cp 87'
+src/main.c:78: > 'info depth 4 score cp 62'
+src/main.c:78: > 'info depth 5 score cp 86'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 299231 btime 299803 movestogo 39'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 63'
+src/main.c:78: > 'info depth 3 score cp 96'
+src/main.c:78: > 'info depth 4 score cp 63'
+src/main.c:78: > 'info depth 5 score cp 91'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d7d5'
+src/main.c:78: > 'info string pondering b1c3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 65'
+src/main.c:78: > 'info depth 3 score cp 91'
+src/main.c:78: > 'info depth 4 score cp 65'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 298639 btime 299492 movestogo 38'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 63'
+src/main.c:78: > 'info depth 3 score cp 91'
+src/main.c:78: > 'info depth 4 score cp 65'
+src/main.c:78: > 'info depth 5 score cp 83'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e7e6'
+src/main.c:78: > 'info string pondering f3e5'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 76'
+src/main.c:78: > 'info depth 3 score cp 83'
+src/main.c:78: > 'info depth 4 score cp 76'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 298063 btime 298670 movestogo 37'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 108'
+src/main.c:78: > 'info depth 3 score cp 140'
+src/main.c:78: > 'info depth 4 score cp 89'
+src/main.c:78: > 'info depth 5 score cp 122'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b8c6'
+src/main.c:78: > 'info string pondering d1c2'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 73'
+src/main.c:78: > 'info depth 3 score cp 122'
+src/main.c:78: > 'info depth 4 score cp 98'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 297642 btime 297940 movestogo 36'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f8d6'
+src/main.c:78: > 'info string pondering b1d2'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 98'
+src/main.c:78: > 'info depth 3 score cp 112'
+src/main.c:78: > 'info depth 4 score cp 64'
+src/main.c:78: > 'info depth 5 score cp 113'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 294340 btime 297924 movestogo 35'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e6e5'
+src/main.c:78: > 'info string pondering e1c1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 64'
+src/main.c:78: > 'info depth 3 score cp 113'
+src/main.c:78: > 'info depth 4 score cp 98'
+src/main.c:78: > 'info depth 5 score cp 127'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 292848 btime 297921 movestogo 34'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e5e4'
+src/main.c:78: > 'info string pondering f3g1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 99'
+src/main.c:78: > 'info depth 3 score cp 127'
+src/main.c:78: > 'info depth 4 score cp 101'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 291307 btime 297920 movestogo 33'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 111'
+src/main.c:78: > 'info depth 3 score cp 139'
+src/main.c:78: > 'info depth 4 score cp 113'
+src/main.c:78: > 'info depth 5 score cp 125'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c8f5'
+src/main.c:78: > 'info string pondering c1b1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 111'
+src/main.c:78: > 'info depth 3 score cp 125'
+src/main.c:78: > 'info depth 4 score cp 112'
+src/main.c:78: > 'info depth 5 score cp 123'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 275332 btime 294289 movestogo 32'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e8g8'
+src/main.c:78: > 'info string pondering d2b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 115'
+src/main.c:78: > 'info depth 3 score cp 123'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 273971 btime 294199 movestogo 31'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 141'
+src/main.c:78: > 'info depth 3 score cp 149'
+src/main.c:78: > 'info depth 4 score cp 136'
+src/main.c:78: > 'info depth 5 score cp 149'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d8d7'
+src/main.c:78: > 'info string pondering d2b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 134'
+src/main.c:78: > 'info depth 3 score cp 149'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 273155 btime 286449 movestogo 30'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 200'
+src/main.c:78: > 'info depth 3 score cp 206'
+src/main.c:78: > 'info depth 4 score cp 206'
+src/main.c:78: > 'info depth 5 score cp 242'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e4f3'
+src/main.c:78: > 'info string pondering c2c1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 206'
+src/main.c:78: > 'info depth 3 score cp 242'
+src/main.c:78: > 'info depth 4 score cp 215'
+src/main.c:78: > 'info depth 5 score cp 238'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 271380 btime 285531 movestogo 29'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 935'
+src/main.c:78: > 'info depth 3 score cp 971'
+src/main.c:78: > 'info depth 4 score cp 969'
+src/main.c:78: > 'info depth 5 score cp 996'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f5c2'
+src/main.c:78: > 'info string pondering d1c1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 979'
+src/main.c:78: > 'info depth 3 score cp 996'
+src/main.c:78: > 'info depth 4 score cp 989'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 269675 btime 285046 movestogo 28'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c2g6'
+src/main.c:78: > 'info string pondering d2b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 989'
+src/main.c:78: > 'info depth 3 score cp 1011'
+src/main.c:78: > 'info depth 4 score cp 1008'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 268071 btime 285043 movestogo 27'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 1338'
+src/main.c:78: > 'info depth 3 score cp 1349'
+src/main.c:78: > 'info depth 4 score cp 1320'
+src/main.c:78: > 'info depth 5 score cp 1356'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d6f4'
+src/main.c:78: > 'info string pondering g2g3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1320'
+src/main.c:78: > 'info depth 3 score cp 1356'
+src/main.c:78: > 'info depth 4 score cp 1325'
+src/main.c:78: > 'info depth 5 score cp 1345'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 267403 btime 284544 movestogo 26'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f4d2'
+src/main.c:78: > 'info string pondering f3d2'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1325'
+src/main.c:78: > 'info depth 3 score cp 1345'
+src/main.c:78: > 'info depth 4 score cp 1316'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 266521 btime 284531 movestogo 25'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 1630'
+src/main.c:78: > 'info depth 3 score cp 1655'
+src/main.c:78: > 'info depth 4 score cp 1634'
+src/main.c:78: > 'info depth 5 score cp 1654'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d2e3'
+src/main.c:78: > 'info string pondering f1g2'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1634'
+src/main.c:78: > 'info depth 3 score cp 1654'
+src/main.c:78: > 'info depth 4 score cp 1650'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 265633 btime 284013 movestogo 24'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove a8d8'
+src/main.c:78: > 'info string pondering h1f1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1650'
+src/main.c:78: > 'info depth 3 score cp 1665'
+src/main.c:78: > 'info depth 4 score cp 1662'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 264087 btime 284009 movestogo 23'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 1665'
+src/main.c:78: > 'info depth 3 score cp 1682'
+src/main.c:78: > 'info depth 4 score cp 1646'
+src/main.c:78: > 'info depth 5 score cp 1670'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c6e5'
+src/main.c:78: > 'info string pondering d4e5'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1646'
+src/main.c:78: > 'info depth 3 score cp 1670'
+src/main.c:78: > 'info depth 4 score cp 1653'
+src/main.c:78: > 'info depth 5 score cp 1677'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 263262 btime 283699 movestogo 22'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f6e4'
+src/main.c:78: > 'info string pondering h1e1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1677'
+src/main.c:78: > 'info depth 3 score cp 1677'
+src/main.c:78: > 'info depth 4 score cp 1728'
+src/main.c:78: > 'info depth 5 score cp 1728'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 261783 btime 283699 movestogo 21'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 1653'
+src/main.c:78: > 'info depth 3 score cp 1708'
+src/main.c:78: > 'info depth 4 score cp 1760'
+src/main.c:78: > 'info depth 5 score cp 1760'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove g6e4'
+src/main.c:78: > 'info string pondering h1e1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1760'
+src/main.c:78: > 'info depth 3 score cp 1760'
+src/main.c:78: > 'info depth 4 score cp 1814'
+src/main.c:78: > 'info depth 5 score cp 1814'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 259755 btime 283448 movestogo 20'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 1773'
+src/main.c:78: > 'info depth 3 score cp 1773'
+src/main.c:78: > 'info depth 4 score cp 1808'
+src/main.c:78: > 'info depth 5 score cp 1829'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d7h3'
+src/main.c:78: > 'info string pondering e5e6'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1808'
+src/main.c:78: > 'info depth 3 score cp 1829'
+src/main.c:78: > 'info depth 4 score cp 1864'
+src/main.c:78: > 'info depth 5 score cp 1881'
+src/main.c:78: > 'info depth 6 score cp 1893'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 255859 btime 282057 movestogo 19'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 1830'
+src/main.c:78: > 'info depth 3 score cp 1830'
+src/main.c:78: > 'info depth 4 score cp 1905'
+src/main.c:78: > 'info depth 5 score cp 1905'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d5c4'
+src/main.c:78: > 'info string pondering e5e6'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1905'
+src/main.c:78: > 'info depth 3 score cp 1905'
+src/main.c:78: > 'info depth 4 score cp 1893'
+src/main.c:78: > 'info depth 5 score cp 1935'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 254921 btime 281077 movestogo 18'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 2276'
+src/main.c:78: > 'info depth 3 score cp 2276'
+src/main.c:78: > 'info depth 4 score cp 1916'
+src/main.c:78: > 'info depth 5 score cp 1916'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f8d8'
+src/main.c:78: > 'info string pondering f1d1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 1916'
+src/main.c:78: > 'info depth 3 score cp 1916'
+src/main.c:78: > 'info depth 4 score cp 1902'
+src/main.c:78: > 'info depth 5 score cp 1925'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 253337 btime 281007 movestogo 17'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 2016'
+src/main.c:78: > 'info depth 3 score cp 2016'
+src/main.c:78: > 'info depth 4 score cp 2082'
+src/main.c:78: > 'info depth 5 score cp 2082'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e4b1'
+src/main.c:78: > 'info string pondering a1b1'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2082'
+src/main.c:78: > 'info depth 3 score cp 2082'
+src/main.c:78: > 'info depth 4 score cp 2133'
+src/main.c:78: > 'info depth 5 score cp 2133'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 252690 btime 280544 movestogo 16'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove h3f1'
+src/main.c:78: > 'info string pondering b1c2'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2133'
+src/main.c:78: > 'info depth 3 score cp 2133'
+src/main.c:78: > 'info depth 4 score cp 2156'
+src/main.c:78: > 'info depth 5 score cp 2156'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 251676 btime 280543 movestogo 15'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d8d2'
+src/main.c:78: > 'info string pondering c2c3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2156'
+src/main.c:78: > 'info depth 3 score cp 2156'
+src/main.c:78: > 'info depth 4 score cp 2255'
+src/main.c:78: > 'info depth 5 score cp 2255'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 250703 btime 280542 movestogo 14'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f1c1'
+src/main.c:78: > 'info string pondering c3b4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2255'
+src/main.c:78: > 'info depth 3 score cp 2255'
+src/main.c:78: > 'info depth 4 score cp 2290'
+src/main.c:78: > 'info depth 5 score cp 2290'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 249704 btime 280542 movestogo 13'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d2b2'
+src/main.c:78: > 'info string pondering b4a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2290'
+src/main.c:78: > 'info depth 3 score cp 2290'
+src/main.c:78: > 'info depth 4 score cp 2362'
+src/main.c:78: > 'info depth 5 score cp 2362'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 248554 btime 280542 movestogo 12'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b2e2'
+src/main.c:78: > 'info string pondering a3b4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2362'
+src/main.c:78: > 'info depth 3 score cp 2362'
+src/main.c:78: > 'info depth 4 score cp 2381'
+src/main.c:78: > 'info depth 5 score cp 2390'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 247379 btime 280542 movestogo 11'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e3f2'
+src/main.c:78: > 'info string pondering a2a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2352'
+src/main.c:78: > 'info depth 3 score cp 2390'
+src/main.c:78: > 'info depth 4 score cp 2375'
+src/main.c:78: > 'info depth 5 score cp 2401'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 245653 btime 280541 movestogo 10'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 2365'
+src/main.c:78: > 'info depth 3 score cp 2403'
+src/main.c:78: > 'info depth 4 score cp 2388'
+src/main.c:78: > 'info depth 5 score cp 2410'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e2e5'
+src/main.c:78: > 'info string pondering a4a5'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2388'
+src/main.c:78: > 'info depth 3 score cp 2410'
+src/main.c:78: > 'info depth 4 score cp 2421'
+src/main.c:78: > 'info depth 5 score cp 2443'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 244964 btime 280312 movestogo 9'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove a7a6'
+src/main.c:78: > 'info string pondering b4a4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2429'
+src/main.c:78: > 'info depth 3 score cp 2443'
+src/main.c:78: > 'info depth 4 score cp 2447'
+src/main.c:78: > 'info depth 5 score cp 2468'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 243190 btime 280312 movestogo 8'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 2405'
+src/main.c:78: > 'info depth 3 score cp 2447'
+src/main.c:78: > 'info depth 4 score cp 2438'
+src/main.c:78: > 'info depth 5 score cp 2468'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e5e2'
+src/main.c:78: > 'info string pondering h2h3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2438'
+src/main.c:78: > 'info depth 3 score cp 2468'
+src/main.c:78: > 'info depth 4 score cp 2487'
+src/main.c:78: > 'info depth 5 score cp 2487'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 242311 btime 280016 movestogo 7'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 2451'
+src/main.c:78: > 'info depth 3 score cp 2471'
+src/main.c:78: > 'info depth 4 score cp 2561'
+src/main.c:78: > 'info depth 5 score cp 2561'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c7c5'
+src/main.c:78: > 'info string pondering b4a4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2561'
+src/main.c:78: > 'info depth 3 score cp 2561'
+src/main.c:78: > 'info depth 4 score cp 2665'
+src/main.c:78: > 'info depth 5 score cp 2665'
+src/main.c:78: > 'info depth 6 score cp 2624'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 240769 btime 279800 movestogo 6'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f2h4'
+src/main.c:78: > 'info string pondering g4g5'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2665'
+src/main.c:78: > 'info depth 3 score cp 2665'
+src/main.c:78: > 'info depth 4 score cp 2624'
+src/main.c:78: > 'info depth 5 score cp 2628'
+src/main.c:78: > 'info depth 6 score cp 2681'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 238988 btime 279799 movestogo 5'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c1h1'
+src/main.c:78: > 'info string pondering g5g6'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2596'
+src/main.c:78: > 'info depth 3 score cp 2657'
+src/main.c:78: > 'info depth 4 score cp 2681'
+src/main.c:78: > 'info depth 5 score cp 2701'
+src/main.c:78: > 'info depth 6 score cp 2683'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 238094 btime 279799 movestogo 4'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove h7g6'
+src/main.c:78: > 'info string pondering a4a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2681'
+src/main.c:78: > 'info depth 3 score cp 2701'
+src/main.c:78: > 'info depth 4 score cp 2683'
+src/main.c:78: > 'info depth 5 score cp 3383'
+src/main.c:78: > 'info depth 6 score cp 3407'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 236833 btime 279798 movestogo 3'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c4c3'
+src/main.c:78: > 'info string pondering a3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 2656'
+src/main.c:78: > 'info depth 3 score cp 3383'
+src/main.c:78: > 'info depth 4 score cp 3407'
+src/main.c:78: > 'info depth 5 score cp 3466'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 235883 btime 279797 movestogo 2'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c3c2'
+src/main.c:78: > 'info string pondering b3c3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3407'
+src/main.c:78: > 'info depth 3 score cp 3466'
+src/main.c:78: > 'info depth 4 score cp 3475'
+src/main.c:78: > 'info depth 5 score cp 3527'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 534005 btime 279797 movestogo 1'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 3407'
+src/main.c:78: > 'info depth 3 score cp 3468'
+src/main.c:78: > 'info depth 4 score cp 3504'
+src/main.c:78: > 'info depth 5 score cp 3534'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c2c1q'
+src/main.c:78: > 'info string pondering b2b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3504'
+src/main.c:78: > 'info depth 3 score cp 3534'
+src/main.c:78: > 'info depth 4 score cp 3510'
+src/main.c:78: > 'info depth 5 score cp 3524'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 533115 btime 579625 movestogo 40'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c1f4'
+src/main.c:78: > 'info string pondering b3c3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3463'
+src/main.c:78: > 'info depth 3 score cp 3524'
+src/main.c:78: > 'info depth 4 score cp 3524'
+src/main.c:78: > 'info depth 5 score cp 3538'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 532189 btime 579624 movestogo 39'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove h4f2'
+src/main.c:78: > 'info string pondering c3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3524'
+src/main.c:78: > 'info depth 3 score cp 3538'
+src/main.c:78: > 'info depth 4 score cp 3545'
+src/main.c:78: > 'info depth 5 score cp 3556'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 531127 btime 579624 movestogo 38'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 3536'
+src/main.c:78: > 'info depth 3 score cp 3538'
+src/main.c:78: > 'info depth 4 score cp 3535'
+src/main.c:78: > 'info depth 5 score cp 3575'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f4d2'
+src/main.c:78: > 'info string pondering d3c4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3521'
+src/main.c:78: > 'info depth 3 score cp 3575'
+src/main.c:78: > 'info depth 4 score cp 3587'
+src/main.c:78: > 'info depth 5 score cp 3616'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 530166 btime 579322 movestogo 37'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d2a5'
+src/main.c:78: > 'info string pondering c4b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3587'
+src/main.c:78: > 'info depth 3 score cp 3616'
+src/main.c:78: > 'info depth 4 score cp 3602'
+src/main.c:78: > 'info depth 5 score cp 3604'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 528960 btime 579322 movestogo 36'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove a5e1'
+src/main.c:78: > 'info string pondering b3c4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3602'
+src/main.c:78: > 'info depth 3 score cp 3604'
+src/main.c:78: > 'info depth 4 score cp 3618'
+src/main.c:78: > 'info depth 5 score cp 3630'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 527009 btime 579322 movestogo 35'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b7b5'
+src/main.c:78: > 'info string pondering c4b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3618'
+src/main.c:78: > 'info depth 3 score cp 3630'
+src/main.c:78: > 'info depth 4 score cp 3636'
+src/main.c:78: > 'info depth 5 score cp 3648'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 525892 btime 579321 movestogo 34'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c5c4'
+src/main.c:78: > 'info string pondering b3a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3636'
+src/main.c:78: > 'info depth 3 score cp 3648'
+src/main.c:78: > 'info depth 4 score cp 3633'
+src/main.c:78: > 'info depth 5 score cp 4384'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 524894 btime 579321 movestogo 33'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c4c3'
+src/main.c:78: > 'info string pondering a3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 3629'
+src/main.c:78: > 'info depth 3 score cp 4384'
+src/main.c:78: > 'info depth 4 score cp 4408'
+src/main.c:78: > 'info depth 5 score cp 4423'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 524088 btime 579321 movestogo 32'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c3c2'
+src/main.c:78: > 'info string pondering b3b2'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 4408'
+src/main.c:78: > 'info depth 3 score cp 4423'
+src/main.c:78: > 'info depth 4 score cp 4459'
+src/main.c:78: > 'info depth 5 score cp 4471'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 523161 btime 579321 movestogo 31'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c2c1q'
+src/main.c:78: > 'info string pondering b2b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 4459'
+src/main.c:78: > 'info depth 3 score cp 4471'
+src/main.c:78: > 'info depth 4 score cp 4456'
+src/main.c:78: > 'info depth 5 score cp 4459'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 522260 btime 579320 movestogo 30'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c1b1'
+src/main.c:78: > 'info string pondering b3a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 4430'
+src/main.c:78: > 'info depth 3 score cp 4459'
+src/main.c:78: > 'info depth 4 score cp 4459'
+src/main.c:78: > 'info depth 5 score cp 4527'
+src/main.c:78: > 'info depth 6 score cp 4515'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 521366 btime 579319 movestogo 29'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b5b4'
+src/main.c:78: > 'info string pondering a3a4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 4427'
+src/main.c:78: > 'info depth 3 score cp 4527'
+src/main.c:78: > 'info depth 4 score cp 4515'
+src/main.c:78: > 'info depth 5 score cp 4563'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 520432 btime 579318 movestogo 28'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b4b3'
+src/main.c:78: > 'info string pondering a4a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 4515'
+src/main.c:78: > 'info depth 3 score cp 4563'
+src/main.c:78: > 'info depth 4 score cp 4544'
+src/main.c:78: > 'info depth 5 score cp 5205'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 519275 btime 579317 movestogo 27'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b1d1'
+src/main.c:78: > 'info string pondering a3a4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 4539'
+src/main.c:78: > 'info depth 3 score cp 5205'
+src/main.c:78: > 'info depth 4 score cp 4541'
+src/main.c:78: > 'info depth 5 score cp 5207'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 518381 btime 579317 movestogo 26'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b3b2'
+src/main.c:78: > 'info string pondering a4a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 4541'
+src/main.c:78: > 'info depth 3 score cp 5207'
+src/main.c:78: > 'info depth 4 score cp 5214'
+src/main.c:78: > 'info depth 5 score cp 5250'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 517455 btime 579317 movestogo 25'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d1d7'
+src/main.c:78: > 'info string pondering a3a2'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5195'
+src/main.c:78: > 'info depth 3 score cp 5250'
+src/main.c:78: > 'info depth 4 score cp 5274'
+src/main.c:78: > 'info depth 5 score cp 5303'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 516409 btime 579316 movestogo 24'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 5195'
+src/main.c:78: > 'info depth 3 score cp 5250'
+src/main.c:78: > 'info depth 4 score cp 5212'
+src/main.c:78: > 'info depth 5 score cp 5267'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b2b1q'
+src/main.c:78: > 'info string pondering b3c4'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5212'
+src/main.c:78: > 'info depth 3 score cp 5267'
+src/main.c:78: > 'info depth 4 score cp 5303'
+src/main.c:78: > 'info depth 5 score cp 5323'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 515255 btime 578655 movestogo 23'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:502: Search stopped
+src/main.c:78: > 'info depth 2 score cp 5274'
+src/main.c:78: > 'info depth 3 score cp 5303'
+src/main.c:78: > 'info depth 4 score cp 5303'
+src/main.c:78: > 'info depth 5 score cp 5323'
+src/main.c:495: Thinking for too long, playing
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove b1e4'
+src/main.c:78: > 'info string pondering a3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5268'
+src/main.c:78: > 'info depth 3 score cp 5323'
+src/main.c:78: > 'info depth 4 score cp 5284'
+src/main.c:78: > 'info depth 5 score cp 5330'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 514317 btime 578506 movestogo 22'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove d7f5'
+src/main.c:78: > 'info string pondering b3a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5269'
+src/main.c:78: > 'info depth 3 score cp 5330'
+src/main.c:78: > 'info depth 4 score cp 5271'
+src/main.c:78: > 'info depth 5 score cp 5332'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3 d7f5 b3a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 513192 btime 578505 movestogo 21'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove h1h2'
+src/main.c:78: > 'info string pondering a3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5271'
+src/main.c:78: > 'info depth 3 score cp 5332'
+src/main.c:78: > 'info depth 4 score cp 5285'
+src/main.c:78: > 'info depth 5 score cp 5339'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3 d7f5 b3a3 h1h2 a3b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 512331 btime 578503 movestogo 20'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove e4f4'
+src/main.c:78: > 'info string pondering b3a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5278'
+src/main.c:78: > 'info depth 3 score cp 5339'
+src/main.c:78: > 'info depth 4 score cp 5278'
+src/main.c:78: > 'info depth 5 score cp 5339'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3 d7f5 b3a3 h1h2 a3b3 e4f4 b3a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 511469 btime 578502 movestogo 19'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f5c8'
+src/main.c:78: > 'info string pondering a3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5273'
+src/main.c:78: > 'info depth 3 score cp 5339'
+src/main.c:78: > 'info depth 4 score cp 5293'
+src/main.c:78: > 'info depth 5 score cp 5339'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3 d7f5 b3a3 h1h2 a3b3 e4f4 b3a3 f5c8 a3b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 510745 btime 578500 movestogo 18'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c8f5'
+src/main.c:78: > 'info string pondering b3a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5278'
+src/main.c:78: > 'info depth 3 score cp 5339'
+src/main.c:78: > 'info depth 4 score cp 5278'
+src/main.c:78: > 'info depth 5 score cp 5339'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3 d7f5 b3a3 h1h2 a3b3 e4f4 b3a3 f5c8 a3b3 c8f5 b3a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 510085 btime 578498 movestogo 17'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove f5c8'
+src/main.c:78: > 'info string pondering a3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5273'
+src/main.c:78: > 'info depth 3 score cp 5339'
+src/main.c:78: > 'info depth 4 score cp 5293'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3 d7f5 b3a3 h1h2 a3b3 e4f4 b3a3 f5c8 a3b3 c8f5 b3a3 f5c8 a3b3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 509503 btime 578497 movestogo 16'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c8c7'
+src/main.c:78: > 'info string pondering b3a3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:78: > 'info depth 2 score cp 5293'
+src/main.c:78: > 'info depth 3 score cp 5329'
+src/main.c:78: > 'info depth 4 score cp 5311'
+src/main.c:78: > 'info depth 5 score cp 5339'
+src/main.c:161: < 'position startpos moves d2d4 g8f6 c1e3 d7d5 g1f3 e7e6 c2c3 b8c6 d1c2 f8d6 b1d2 e6e5 e1c1 e5e4 f3e1 c8f5 c1b1 e8g8 b1a1 d8d7 f2f3 e4f3 e1f3 f5c2 d1c1 c2g6 e3f4 d6f4 g2g3 f4d2 c1d1 d2e3 f1g2 a8d8 f3e5 c6e5 d4e5 f6e4 g2e4 g6e4 h1f1 d7h3 c3c4 d5c4 d1d8 f8d8 f1b1 e4b1 a1b1 h3f1 b1c2 d8d2 c2c3 f1c1 c3b4 d2b2 b4a3 b2e2 a3b4 e3f2 a2a4 e2e5 a4a5 a7a6 g3g4 e5e2 h2h4 c7c5 b4a4 f2h4 g4g5 c1h1 g5g6 h7g6 a4a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1f4 b3c3 h4f2 c3d3 f4d2 d3c4 d2a5 c4b3 a5e1 b3c4 b7b5 c4b3 c5c4 b3a3 c4c3 a3b3 c3c2 b3b2 c2c1q b2b3 c1b1 b3a3 b5b4 a3a4 b4b3 a4a3 b1d1 a3a4 b3b2 a4a3 d1d7 a3b3 b2b1q b3a3 b1e4 a3b3 d7f5 b3a3 h1h2 a3b3 e4f4 b3a3 f5c8 a3b3 c8f5 b3a3 f5c8 a3b3 c8c7 b3a3'
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:161: < 'go wtime 508769 btime 578497 movestogo 15'
+src/main.c:190: state = THINKING_ON_OUR_TIME
+src/main.c:626: Cancel search because we're done pondering and want to play
+src/main.c:502: Search stopped
+src/main.c:78: > 'bestmove c7c8'
+src/main.c:78: > 'info string pondering a3b3'
+src/main.c:194: state = THINKING_ON_THEIR_TIME
+src/main.c:161: < 'isready'
+src/main.c:78: > 'readyok'
+src/main.c:78: > 'info depth 2 score cp 5273'
+src/main.c:78: > 'info depth 3 score cp 5339'
+src/main.c:78: > 'info depth 4 score cp 5293'
+src/main.c:78: > 'info depth 5 score cp 5339'
+src/main.c:161: < 'quit'

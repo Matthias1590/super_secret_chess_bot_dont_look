@@ -1,4 +1,5 @@
 #include "move.h"
+#include "basedboard.h"
 #include "generate.h"
 #include "parse.h"
 #include "types.h"

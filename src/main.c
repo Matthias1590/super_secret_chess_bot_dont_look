@@ -18,12 +18,13 @@
 #include "basedboard.h"
 #include "uci.h"
 #include "pst.h"
+#include "state.h"
 
 /// CONFIGURATION
 
 #define DEBUG true
 #define MIN_DEPTH 2
-#define MAX_DEPTH 6
+#define MAX_DEPTH 5
 
 /// DEBUGGING
 
@@ -88,10 +89,6 @@ static bool streq(char *a, char *b) {
 	return strcmp(a, b) == 0;
 }
 
-static void signal_handler(int signum) {
-	DEBUGF("Signal %d received\n", signum);
-}
-
 static void fprint_trace(FILE *f) {
     void* callstack[128];
     int frames = backtrace(callstack, 128);
@@ -126,21 +123,13 @@ static void fprint_trace(FILE *f) {
 /// MAIN CODE
 
 void update_state(void);
+void start_search(void);
 
 typedef long long t_score;
 #define SCORE_MAX 100000000
 #define SCORE_MIN -SCORE_MAX
 
-struct position g_pos, g_rollback_pos;
-
-typedef enum {
-	WAITING,
-	THINKING,
-	PONDERING,
-} t_state;
-
-t_state g_state = WAITING;
-bool g_cancel = false;
+struct position g_pos, g_real_pos;
 
 char *g_commands[1024];
 size_t g_commands_head = 0;
@@ -194,28 +183,24 @@ char *dequeue_command(void) {
 void set_state(t_state state) {
 	g_state = state;
 	switch (state) {
-	case WAITING: {
-		DEBUGF("state = WAITING\n", 1);
+	case WAITING_FOR_GO: {
+		DEBUGF("state = WAITING_FOR_GO\n", 1);
 	} break;
-	case THINKING: {
-		DEBUGF("state = THINKING\n", 1);
+	case THINKING_ON_OUR_TIME: {
+		DEBUGF("state = THINKING_ON_OUR_TIME\n", 1);
 		// TODO: Set start_time so we can keep track of how long we've been thinking
 	} break;
-	case PONDERING: {
-		DEBUGF("state = PONDERING\n", 1);
+	case THINKING_ON_THEIR_TIME: {
+		DEBUGF("state = THINKING_ON_THEIR_TIME\n", 1);
 	} break;
 	default: UNREACHABLE();
 	}
 }
 
-bool should_cancel_search(int depth) {
-	if (depth <= MIN_DEPTH) {
-		return false;
-	}
-
+bool should_stop_search(int depth) {
 	update_state();
 
-	return g_cancel;
+	return g_cancel && (g_discard || depth > MIN_DEPTH);
 }
 
 t_score get_piece_value(int type) {
@@ -246,6 +231,7 @@ t_score get_square_value(int piece, int square) {
 			return queen_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
 		case KING:
 			return king_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
+		default: UNREACHABLE();
 	}
 }
 
@@ -343,14 +329,40 @@ void sort_moves(struct move *moves, size_t count) {
 	qsort(moves, count, sizeof(struct move), (int (*)(const void *, const void *))compare_moves);
 }
 
-t_score quiescence(t_score alpha, t_score beta) {
+typedef struct {
+	t_score score;
+	struct move move;
+	struct move next_move;
+} t_search_res;
+
+#define NO_MOVE ((struct move){.from_square = NO_SQUARE, .to_square = NO_SQUARE, .promotion_type = NO_TYPE})
+
+t_search_res search_neg(t_search_res search_res) {
+	return (t_search_res) {
+		.score = -search_res.score,
+		.move = search_res.move,
+		.next_move = search_res.next_move,
+	};
+}
+
+t_search_res search_res(t_score score, struct move move, struct move next_move) {
+	return (t_search_res) {
+		.score = score,
+		.move = move,
+		.next_move = next_move,
+	};
+}
+
+t_search_res quiescence(t_score alpha, t_score beta) {
 	t_score standpat = evaluate();
 	if (standpat >= beta) {
-		return beta;
+		return search_res(beta, NO_MOVE, NO_MOVE);
 	}
 	if (alpha < standpat) {
 		alpha = standpat;
 	}
+
+	t_search_res best_res = search_res(alpha, NO_MOVE, NO_MOVE);
 
 	struct move moves[MAX_MOVES];
 	size_t moves_count = generate_legal_moves(&g_pos, moves);
@@ -364,159 +376,161 @@ t_score quiescence(t_score alpha, t_score beta) {
 		// TODO: Figure out a better way to undo a move
 		struct position copy = g_pos;
 		do_move(&g_pos, moves[i]);
-		t_score score = -quiescence(-beta, -alpha);
+		t_search_res res = search_neg(quiescence(-beta, -alpha));
 		g_pos = copy;
 
-		if (score >= beta) {
-			return beta;
+		if (res.score >= beta) {
+			best_res.score = beta;
+			best_res.move = moves[i];
+			best_res.next_move = res.move;
+			break;
 		}
-		if (score > alpha) {
-			alpha = score;
+		if (res.score > alpha) {
+			alpha = res.score;
+			best_res.score = alpha;
+			best_res.move = moves[i];
+			best_res.next_move = res.move;
 		}
 	}
 
-	return alpha;
+	return best_res;
+}
+
+bool is_in_check(struct position *pos) {
+	// TODO: Implement
+	return false;
 }
 
 int g_check_counter = 0;
 
-t_score negamax(int depth, t_score alpha, t_score beta, struct move *best_move, struct move *best_opponent_move) {
-	if (/* g_check_counter++ % 500 == 0 && */ should_cancel_search(depth)) {
-		return 0;
+t_search_res negamax(int depth, t_score alpha, t_score beta) {
+	if (/* g_check_counter++ % 500 == 0 && */ should_stop_search(depth)) {
+		return search_res(0, NO_MOVE, NO_MOVE);
 	}
 
 	if (depth == 0) {
 		return quiescence(alpha, beta);
 	}
 
-	t_score best_score = SCORE_MIN;
-	struct move best_local_move, best_local_opponent_move;
+	t_search_res best_res = search_res(SCORE_MIN, NO_MOVE, NO_MOVE);
 
 	struct move moves[MAX_MOVES];
 	size_t moves_count = generate_legal_moves(&g_pos, moves);
 	score_moves(&g_pos, moves, moves_count);
 	sort_moves(moves, moves_count);
 
-	if (best_move) {
-		*best_move = moves[0];
+	if (moves_count == 0) {
+		if (is_in_check(&g_pos)) {
+			return search_res(-SCORE_MAX, NO_MOVE, NO_MOVE);
+		} else {
+			return search_res(0, NO_MOVE, NO_MOVE);
+		}
 	}
+	best_res.move = moves[0];
 
 	for (size_t i = 0; i < moves_count; i++) {
 		// TODO: Figure out a better way to undo a move
 		struct position copy = g_pos;
 		do_move(&g_pos, moves[i]);
-		t_score score;
-		if (best_move && best_opponent_move) {
-			score = -negamax(depth - 1, -beta, -alpha, &best_local_opponent_move, NULL);
-		} else {
-			score = -negamax(depth - 1, -beta, -alpha, NULL, NULL);
-		}
+		t_search_res res = search_neg(negamax(depth - 1, -beta, -alpha));
 		g_pos = copy;
 
-		if (score == SCORE_MAX) {
-			best_score = score;
-			best_local_move = moves[i];
-			if (best_opponent_move) {
-				*best_opponent_move = best_local_opponent_move;
-			}
+		if (res.score > best_res.score) {
+			best_res = res;
+			best_res.move = moves[i];
+			best_res.next_move = res.move;
+		}
+		if (res.score == SCORE_MAX) {
 			break;
 		}
-		if (score > best_score) {
-			best_score = score;
-			best_local_move = moves[i];
-			if (best_opponent_move) {
-				*best_opponent_move = best_local_opponent_move;
-			}
-		}
-		if (score >= beta) {
-			best_score = beta;
-			best_local_move = moves[i];
-			if (best_opponent_move) {
-				*best_opponent_move = best_local_opponent_move;
-			}
+		if (res.score >= beta) {
+			best_res.score = beta;
+			best_res.move = moves[i];
+			best_res.next_move = res.move;
 			break;
 		}
-		if (score > alpha) {
-			best_score = score;
-			best_local_move = moves[i];
-			if (best_opponent_move) {
-				*best_opponent_move = best_local_opponent_move;
-			}
-			alpha = score;
+		if (res.score > alpha) {
+			best_res.score = res.score;
+			best_res.move = moves[i];
+			best_res.next_move = res.move;
+			alpha = res.score;
 		}
 	}
 
-	if (best_move) {
-		*best_move = best_local_move;
-	}
-	return best_score;
+	return best_res;
 }
 
-t_score search_at_depth(int depth, struct move *best_move, struct move *best_opponent_move) {
-	return negamax(depth, SCORE_MIN, SCORE_MAX, best_move, best_opponent_move);
+t_search_res search_at_depth(int depth) {
+	return negamax(depth, SCORE_MIN, SCORE_MAX);
 }
 
 struct move g_pondering_move;
 
+void start_pondering(void) {
+	do_move(&g_pos, g_pondering_move);
+	set_state(THINKING_ON_THEIR_TIME);
+	start_search();
+}
+
 void start_search(void) {
+	g_cancel = false;
+	g_discard = false;
+
 	int depth = MIN_DEPTH;
 
-	t_score last_score = 0;
-	struct move last_best_move, last_best_opponent_move;
+	t_search_res last_res = search_res(0, NO_MOVE, NO_MOVE);
 
-	while (true) {
-		struct move best_move, best_opponent_move;
-		t_score score = search_at_depth(depth, &best_move, &best_opponent_move);
-
+	do {
+		t_search_res res = search_at_depth(depth);
 		if (g_cancel) {
 			break;
 		}
+		last_res = res;
 
-		uci_printf("info depth %d score cp %lld", depth, score);
-
-		last_score = score;
-		last_best_move = best_move;
-		last_best_opponent_move = best_opponent_move;
+		uci_printf("info depth %d score cp %lld", depth, last_res.score);
 
 		depth++;
 
-		if (g_state != PONDERING && depth > MAX_DEPTH) {
-			break;
+		if (g_state == THINKING_ON_OUR_TIME && depth > MAX_DEPTH) {
+			DEBUGF("Thinking for too long, playing\n", 1);
+			play_found_move();
 		}
-	}
+	} while (!g_cancel);
 
-	// Restore position
-	g_pos = g_rollback_pos;
+	ASSERT(depth > MIN_DEPTH || g_discard);
+	ASSERT(!move_eq(last_res.move, NO_MOVE));
+	DEBUGF("Search stopped\n", 1);
 
-	bool was_cancelled = g_cancel;
-	if (was_cancelled) {
-		DEBUGF("Search was cancelled\n", 1);
-	}
-	g_cancel = false;
+	// Rollback position
+	g_pos = g_real_pos;
 
-	// Pondering can be cancelled but the state should be set to WAITING when its cancelled
-	ASSERT(g_state != PONDERING);
+	// If the search was discarded, we were pondering the wrong move, restart the search
+	if (g_discard) {
+		start_search();
+	// Else, play the move and start pondering again
+	} else {
+		ASSERT(depth >= MIN_DEPTH);  // We should have searched at least at the min depth
 
-	if (g_state != WAITING) {
-		ASSERT(depth >= MIN_DEPTH);  // We should have searched at least once
+		char buffer[5];
 
-		char buffer[5] = {0};
-		buffer[0] = 'a' + FILE(last_best_move.from_square);
-		buffer[1] = '1' + RANK(last_best_move.from_square);
-		buffer[2] = 'a' + FILE(last_best_move.to_square);
-		buffer[3] = '1' + RANK(last_best_move.to_square);
-		buffer[4] = "\0pnbrqk"[last_best_move.promotion_type + 1];
+		buffer[0] = 'a' + FILE(last_res.move.from_square);
+		buffer[1] = '1' + RANK(last_res.move.from_square);
+		buffer[2] = 'a' + FILE(last_res.move.to_square);
+		buffer[3] = '1' + RANK(last_res.move.to_square);
+		buffer[4] = "\0pnbrqk"[last_res.move.promotion_type + 1];
+		buffer[5] = '\0';
 
 		uci_printf("bestmove %s", buffer);
-		do_move(&g_pos, last_best_move);
+		do_move(&g_pos, last_res.move);
 
-		buffer[0] = 'a' + FILE(last_best_opponent_move.from_square);
-		buffer[1] = '1' + RANK(last_best_opponent_move.from_square);
-		buffer[2] = 'a' + FILE(last_best_opponent_move.to_square);
-		buffer[3] = '1' + RANK(last_best_opponent_move.to_square);
-		buffer[4] = "\0pnbrqk"[last_best_opponent_move.promotion_type + 1];
+		buffer[0] = 'a' + FILE(last_res.next_move.from_square);
+		buffer[1] = '1' + RANK(last_res.next_move.from_square);
+		buffer[2] = 'a' + FILE(last_res.next_move.to_square);
+		buffer[3] = '1' + RANK(last_res.next_move.to_square);
+		buffer[4] = "\0pnbrqk"[last_res.next_move.promotion_type + 1];
+		buffer[5] = '\0';
 
-		uci_printf("predicted opponent move %s", buffer);
+		uci_printf("info string pondering %s", buffer);
 
 #if DEBUG
 		struct move moves[MAX_MOVES];
@@ -525,7 +539,7 @@ void start_search(void) {
 		// Check if predicted move is legal
 		bool found = moves_count > 0;
 		for (size_t i = 0; i < moves_count; i++) {
-			if (move_eq(moves[i], last_best_opponent_move)) {
+			if (move_eq(moves[i], last_res.next_move)) {
 				found = true;
 				break;
 			}
@@ -535,89 +549,83 @@ void start_search(void) {
 #endif
 
 		// Done thinking, start pondering
-		set_state(PONDERING);
-		g_pondering_move = last_best_opponent_move;
-		do_move(&g_pos, g_pondering_move);
-		start_search();
+		g_pondering_move = last_res.next_move;
+		start_pondering();
 	}
 }
 
-void handle_position(char *token, char *store) {
-	struct move last_move;
-	uci_position(&g_pos, token, store, &last_move);
-	g_rollback_pos = g_pos;
+void restart_search(void) {
+	discard_search();
+	set_state(THINKING_ON_OUR_TIME);
+}
 
-	switch (g_state) {
-	case WAITING: break;
-	case THINKING: {
-		UNREACHABLE();  // It's our turn to move and we only move after we're done thinking, this shouldn't happen
-	} break;
-	case PONDERING: {
-		if (!move_eq(last_move, g_pondering_move)) {
-			// Cancel pondering and go to waiting stage, wait for go command
-			g_cancel = true;
-			set_state(WAITING);
-		} else {
-			// We predicted the opponents move correctly!
-			DEBUGF("Predicted opponent move correctly\n", 1);
-			set_state(THINKING);
-		}
-	} break;
-	default: UNREACHABLE();
-	}
+struct move g_last_move;
+
+void handle_position(char *token, char *store) {
+	uci_position(&g_real_pos, token, store, &g_last_move);
+	g_pos = g_real_pos;
 }
 
 void handle_go(char *token, char *store) {
-	switch (g_state) {
-	case WAITING: {
-		struct search_info info;
+	struct search_info info;
 
-		info.pos = &g_pos;
-		info.time[WHITE] = 0;
-		info.time[BLACK] = 0;
-		info.increment[WHITE] = 0;
-		info.increment[BLACK] = 0;
+	info.pos = &g_pos;
+	info.time[WHITE] = 0;
+	info.time[BLACK] = 0;
+	info.increment[WHITE] = 0;
+	info.increment[BLACK] = 0;
 
-		while ((token = get_token(token, store))) {
-			if (!strcmp(token, "searchmoves")) {
-				break;
-			} else if (!strcmp(token, "ponder")) {
-				continue;
-			} else if (!strcmp(token, "infinite")) {
-				continue;
-			} else if (!strcmp(token, "wtime")) {
-				token = get_token(token, store);
-				info.time[WHITE] = token ? atoi(token) : 0;
-			} else if (!strcmp(token, "btime")) {
-				token = get_token(token, store);
-				info.time[BLACK] = token ? atoi(token) : 0;
-			} else if (!strcmp(token, "winc")) {
-				token = get_token(token, store);
-				info.increment[WHITE] = token ? atoi(token) : 0;
-			} else if (!strcmp(token, "binc")) {
-				token = get_token(token, store);
-				info.increment[BLACK] = token ? atoi(token) : 0;
-			} else {
-				token = get_token(token, store);
-			}
-
-			if (!token) {
-				break;
-			}
+	while ((token = get_token(token, store))) {
+		if (!strcmp(token, "searchmoves")) {
+			break;
+		} else if (!strcmp(token, "ponder")) {
+			continue;
+		} else if (!strcmp(token, "infinite")) {
+			continue;
+		} else if (!strcmp(token, "wtime")) {
+			token = get_token(token, store);
+			info.time[WHITE] = token ? atoi(token) : 0;
+		} else if (!strcmp(token, "btime")) {
+			token = get_token(token, store);
+			info.time[BLACK] = token ? atoi(token) : 0;
+		} else if (!strcmp(token, "winc")) {
+			token = get_token(token, store);
+			info.increment[WHITE] = token ? atoi(token) : 0;
+		} else if (!strcmp(token, "binc")) {
+			token = get_token(token, store);
+			info.increment[BLACK] = token ? atoi(token) : 0;
+		} else {
+			token = get_token(token, store);
 		}
 
-		(void)info;  // TODO: Use info
+		if (!token) {
+			break;
+		}
+	}
 
-		set_state(THINKING);
+	(void)info;  // TODO: Use info
+
+	switch (g_state) {
+	case WAITING_FOR_GO: {
+		set_state(THINKING_ON_OUR_TIME);
 		start_search();
 	} break;
-	case THINKING: {
-		// If we're here it means we were pondering the correct move.
-		// Cancel the search and play it instantly
-		g_cancel = true;
+	case THINKING_ON_OUR_TIME: {
+		UNREACHABLE();  // We're already thinking, we shouldn't be getting another go command
 	} break;
-	case PONDERING: {
-		UNREACHABLE();  // If we're pondering the correct move, the state will be set to THINKING, we should never get here.
+	case THINKING_ON_THEIR_TIME: {
+		// If we we're pondering the wrong move, restart the search
+		if (!move_eq(g_last_move, g_pondering_move)) {
+			restart_search();
+		} else {
+			// TODO: Maybe just keep thinking for a little bit on top of the pondering.
+			set_state(THINKING_ON_OUR_TIME);
+
+			// If we're here it means we were pondering the correct move.
+			// Cancel the search and play it instantly
+			DEBUGF("Cancel search because we're done pondering and want to play\n", 1);
+			play_found_move();
+		}
 	} break;
 	default: UNREACHABLE();
 	}

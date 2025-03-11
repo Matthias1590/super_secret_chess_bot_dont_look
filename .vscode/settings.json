@@ -14,6 +14,9 @@
 		"evaluate.h": "c",
 		"position.h": "c",
 		"pst.h": "c",
-		"generate.h": "c"
+		"generate.h": "c",
+		"*.tcc": "c",
+		"string": "c",
+		"string_view": "c"
 	}
 }
