@@ -23,6 +23,7 @@
 /// CONFIGURATION
 
 #define DEBUG true
+// #define DEBUG_POS "r3kbnr/pp2pppp/2p1b3/8/8/3B4/PPPP1PPP/RNB2RK1 w kq - 1 9"
 #define MIN_DEPTH 2
 #define MAX_DEPTH 5
 
@@ -218,23 +219,71 @@ t_score get_piece_value(int type) {
 	}
 }
 
+bool is_end_game(void) {
+	int minor_count = bb_count(g_pos.bbs[WHITE][KNIGHT]) + bb_count(g_pos.bbs[WHITE][BISHOP]) + bb_count(g_pos.bbs[WHITE][ROOK])
+		+ bb_count(g_pos.bbs[BLACK][KNIGHT]) + bb_count(g_pos.bbs[BLACK][BISHOP]) + bb_count(g_pos.bbs[BLACK][ROOK]);
+
+	// if queens are off the board, and less than 9 minor pieces
+	if (bb_count(g_pos.bbs[WHITE][QUEEN]) == 0 && bb_count(g_pos.bbs[BLACK][QUEEN]) == 0) {
+		if (minor_count < 9) {
+			return true;
+		}
+	}
+
+	// if queens and less than 5 minor pieces
+	if (bb_count(g_pos.bbs[WHITE][QUEEN]) == 1 && bb_count(g_pos.bbs[BLACK][QUEEN]) == 1) {
+		if (minor_count < 5) {
+			return true;
+		}
+	}
+
+	// if one queen off the board and less than 7 minor pieces
+	if (bb_count(g_pos.bbs[WHITE][QUEEN]) + bb_count(g_pos.bbs[BLACK][QUEEN]) == 1) {
+		if (minor_count < 7) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
 t_score get_square_value(int piece, int square) {
 	ASSERT(piece != NO_PIECE);
 
 	switch (TYPE(piece)) {
 		case PAWN:
-			return pawn_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
+			return (is_end_game() ? pawn_squares_end : pawn_squares_mid)[COLOR(piece) == WHITE ? 63 - square : square];
 		case KNIGHT:
-			return knight_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
+			return (is_end_game() ? knight_squares_end : knight_squares_mid)[COLOR(piece) == WHITE ? 63 - square : square];
 		case BISHOP:
-			return bishop_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
+			return (is_end_game() ? bishop_squares_end : bishop_squares_mid)[COLOR(piece) == WHITE ? 63 - square : square];
 		case ROOK:
-			return rook_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
+			return (is_end_game() ? rook_squares_end : rook_squares_mid)[COLOR(piece) == WHITE ? 63 - square : square];
 		case QUEEN:
-			return queen_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
+			return (is_end_game() ? queen_squares_end : queen_squares_mid)[COLOR(piece) == WHITE ? 63 - square : square];
 		case KING:
-			return king_squares_mid[COLOR(piece) == WHITE ? 63 - square : square];
+			return (is_end_game() ? king_squares_end : king_squares_mid)[COLOR(piece) == WHITE ? 63 - square : square];
 		default: UNREACHABLE();
+	}
+}
+
+int get_square_color(int square) {
+	return square % 2 == 0 ? WHITE : BLACK;
+}
+
+uint64_t color_mask(int color) {
+	return color == WHITE ? WHITE_MASK : BLACK_MASK;
+}
+
+char *fmt_color(int color) {
+	return color == WHITE ? "white" : "black";
+}
+
+int pawn_color(int color) {
+	if ((bb_count(g_pos.bbs[color][PAWN] & WHITE_MASK)) > (bb_count(g_pos.bbs[color][PAWN] & BLACK_MASK))) {
+		return WHITE;
+	} else {
+		return BLACK;
 	}
 }
 
@@ -244,18 +293,18 @@ t_score evaluate(void) {
 	t_score score = 0;
 
 	// Material count
-	score += bb_count(g_pos.bbs[WHITE][PAWN]) * get_piece_value(PAWN);
-	score -= bb_count(g_pos.bbs[BLACK][PAWN]) * get_piece_value(PAWN);
-	score += bb_count(g_pos.bbs[WHITE][KNIGHT]) * get_piece_value(KNIGHT);
-	score -= bb_count(g_pos.bbs[BLACK][KNIGHT]) * get_piece_value(KNIGHT);
-	score += bb_count(g_pos.bbs[WHITE][BISHOP]) * get_piece_value(BISHOP);
-	score -= bb_count(g_pos.bbs[BLACK][BISHOP]) * get_piece_value(BISHOP);
-	score += bb_count(g_pos.bbs[WHITE][ROOK]) * get_piece_value(ROOK);
-	score -= bb_count(g_pos.bbs[BLACK][ROOK]) * get_piece_value(ROOK);
-	score += bb_count(g_pos.bbs[WHITE][QUEEN]) * get_piece_value(QUEEN);
-	score -= bb_count(g_pos.bbs[BLACK][QUEEN]) * get_piece_value(QUEEN);
-	score += bb_count(g_pos.bbs[WHITE][KING]) * get_piece_value(KING);
-	score -= bb_count(g_pos.bbs[BLACK][KING]) * get_piece_value(KING);
+	int p_colors[2] = {pawn_color(WHITE), pawn_color(BLACK)};
+	for (int c = WHITE; c <= BLACK; c++) {
+		score += bb_count(g_pos.bbs[c][PAWN] & color_mask(p_colors[c])) * get_piece_value(PAWN) * 1.1 * (c == WHITE ? 1 : -1);  // Note: we want all the pawns on the same color
+		score += bb_count(g_pos.bbs[c][PAWN] & color_mask(!p_colors[c])) * get_piece_value(PAWN) * 0.9 * (c == WHITE ? 1 : -1);
+		score += bb_count(g_pos.bbs[c][KNIGHT] & color_mask(p_colors[c])) * get_piece_value(KNIGHT) * 1.1 * (c == WHITE ? 1 : -1);  // Note: we want the knight on the same color as the pawns
+		score += bb_count(g_pos.bbs[c][KNIGHT] & color_mask(!p_colors[c])) * get_piece_value(KNIGHT) * 0.9 * (c == WHITE ? 1 : -1);
+		score += bb_count(g_pos.bbs[c][BISHOP] & color_mask(!p_colors[c])) * get_piece_value(BISHOP) * 1.1 * (c == WHITE ? 1 : -1);  // Note: we want the bishop on the opposite color of the pawns
+		score += bb_count(g_pos.bbs[c][BISHOP] & color_mask(p_colors[c])) * get_piece_value(BISHOP) * 0.9 * (c == WHITE ? 1 : -1);
+		score += bb_count(g_pos.bbs[c][QUEEN]) * get_piece_value(QUEEN) * (c == WHITE ? 1 : -1);  // Note: we don't really care about the queen's position
+		score += bb_count(g_pos.bbs[c][ROOK]) * get_piece_value(ROOK) * (c == WHITE ? 1 : -1);  // Note: we don't really care about the rook's position
+		score += bb_count(g_pos.bbs[c][KING]) * get_piece_value(KING) * (c == WHITE ? 1 : -1);  // Note: we don't really care about the king's position
+	}
 
 	// Piece square tables
 	for (int i = 0; i < 64; i++) {
@@ -267,12 +316,46 @@ t_score evaluate(void) {
 		score += get_square_value(g_pos.board[i], i) * (color == WHITE ? 1 : -1);
 	}
 
+	// Pawn structure
+	// TODO: Test and tweak
+	for (int c = WHITE; c <= BLACK; c++) {
+		for (int i = 0; i < 7; i++) {
+			// Get pawn on file i
+			uint64_t pawn = g_pos.bbs[c][PAWN] & FILE_MASK(i);
+			uint64_t neighbor = pawn >> 1;
+			uint64_t neighbor_up = neighbor << 8;
+			uint64_t neighbor_down = neighbor >> 8;
+
+			// Check if pawn is defended by pawn or if is defending a pawn
+			if ((g_pos.bbs[c][PAWN] & neighbor_up) != 0 || (g_pos.bbs[c][PAWN] & neighbor_down) != 0) {
+				score += 10 * (c == WHITE ? 1 : -1);
+			} else {
+				score -= 10 * (c == WHITE ? 1 : -1);
+			}
+		}
+	}
+
+	// Doubled pawns
+	for (int c = WHITE; c <= BLACK; c++) {
+		for (int i = 0; i < 7; i++) {
+			// Get pawns on file i
+			uint64_t pawns = g_pos.bbs[c][PAWN] & FILE_MASK(i);
+
+			// Check if its doubled
+			if (bb_count(pawns) > 1) {
+				score -= 5 * bb_count(pawns) * (c == WHITE ? 1 : -1);
+			}
+		}
+	}
+
 	// Pins
 	// TODO
 	// piece of value x is blocking a piece of value >= x, and is attacked by a piece of value < x
 
 	// Mobility (100 moves is worth a pawn)
-	score += generate_legal_moves(&g_pos, g_null_moves) * (g_pos.side_to_move == WHITE ? 1 : -1);
+	// BLUNDER: Sacks bishop
+	// r3kbnr/pp2pppp/2p1b3/8/8/3B4/PPPP1PPP/RNB2RK1 w kq - 1 9
+	// score += generate_legal_moves(&g_pos, g_null_moves) * (g_pos.side_to_move == WHITE ? 1 : -1);
 
 	return score * (g_pos.side_to_move == WHITE ? 1 : -1);
 }
@@ -487,6 +570,8 @@ void start_search(void) {
 
 	t_search_res last_res = search_res(0, NO_MOVE, NO_MOVE);
 
+	DEBUGF("Search started\n");
+
 	do {
 		t_search_res res = search_at_depth(depth);
 		if (g_cancel) {
@@ -494,7 +579,9 @@ void start_search(void) {
 		}
 		last_res = res;
 
+#if DEBUG
 		uci_printf("info depth %d score cp %lld", depth, last_res.score);
+#endif
 
 		depth++;
 
@@ -517,6 +604,7 @@ void start_search(void) {
 	// Else, play the move and start pondering again
 	} else {
 		ASSERT(depth >= MIN_DEPTH);  // We should have searched at least at the min depth
+		ASSERT(!move_eq(last_res.move, NO_MOVE));  // We should have found a move
 
 		char buffer[6];
 
@@ -537,7 +625,10 @@ void start_search(void) {
 		buffer[4] = "\0pnbrqk"[last_res.next_move.promotion_type + 1];
 		buffer[5] = '\0';
 
+#if DEBUG
 		uci_printf("info string pondering %s", buffer);
+		uci_printf("info we're dominating the %s squares", fmt_color(pawn_color(!g_pos.side_to_move)));
+#endif
 
 #if DEBUG
 		struct move moves[MAX_MOVES];
@@ -683,11 +774,23 @@ int main(void) {
 	ASSERT(g_debug_file != NULL);
 #endif
 
+#ifdef DEBUG_POS
+	ASSERT(parse_position(&g_real_pos, DEBUG_POS) == SUCCESS);
+	g_pos = g_real_pos;
+
+	print_position(&g_pos, stdout);
+	printf("\n");
+
+	set_state(THINKING_ON_OUR_TIME);
+	start_search();
+#else
 	while (!g_pos.game_over) {
 		update_state();
 	}
+#endif
 
 #if DEBUG
+	DEBUGF("-- PONDERING --\n");
 	DEBUGF("Total ponders: %zu\n", g_dbg_total_ponders);
 	DEBUGF("Discarded ponders: %zu\n", g_dbg_discarded_ponders);
 	DEBUGF("Correct ponder percentage: %f\n", 1.0 - (double)g_dbg_discarded_ponders / g_dbg_total_ponders);

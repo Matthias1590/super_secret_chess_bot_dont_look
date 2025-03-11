@@ -1,205 +1,1653 @@
-src/main.c:164: < 'uci'
-src/main.c:81: > 'id name checkmate.exe'
-src/main.c:81: > 'id author amel-fou mapatenk mwijnsma'
-src/main.c:81: > 'uciok'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'ucinewgame'
-src/main.c:164: < 'position startpos'
-src/main.c:164: < 'position startpos moves e2e4'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 299660 btime 300000 movestogo 40'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 2 score cp 77'
-src/main.c:81: > 'info depth 3 score cp 53'
-src/main.c:81: > 'info depth 4 score cp 78'
-src/main.c:81: > 'info depth 5 score cp 43'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove b8c6'
-src/main.c:81: > 'info string pondering f1d3'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp 59'
-src/main.c:81: > 'info depth 3 score cp 43'
-src/main.c:81: > 'info depth 4 score cp 59'
-src/main.c:81: > 'info depth 5 score cp 45'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 298637 btime 299217 movestogo 39'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 6 score cp 9'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove c6e5'
-src/main.c:81: > 'info string pondering g1f3'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp 76'
-src/main.c:81: > 'info depth 3 score cp 67'
-src/main.c:81: > 'info depth 4 score cp 9'
-src/main.c:81: > 'info depth 5 score cp 2'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 298341 btime 292517 movestogo 38'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 6 score cp -59'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove e5f3'
-src/main.c:81: > 'info string pondering d1f3'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp -30'
-src/main.c:81: > 'info depth 3 score cp -51'
-src/main.c:81: > 'info depth 4 score cp -59'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 298154 btime 291546 movestogo 37'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 5 score cp -88'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove d7d5'
-src/main.c:81: > 'info string pondering e1g1'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp -38'
-src/main.c:81: > 'info depth 3 score cp -88'
-src/main.c:81: > 'info depth 4 score cp -310'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 297287 btime 291037 movestogo 36'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 5 score cp -324'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove d5e4'
-src/main.c:81: > 'info string pondering d3e4'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp -56'
-src/main.c:81: > 'info depth 3 score cp -88'
-src/main.c:81: > 'info depth 4 score cp -34'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 296588 btime 289650 movestogo 35'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 5 score cp -49'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove c7c6'
-src/main.c:81: > 'info string pondering f3d3'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp -34'
-src/main.c:81: > 'info depth 3 score cp -49'
-src/main.c:81: > 'info depth 4 score cp -31'
-src/main.c:81: > 'info depth 5 score cp -37'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4 c7c6 f3d3'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 294641 btime 288876 movestogo 34'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 6 score cp 34'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove d8d3'
-src/main.c:81: > 'info string pondering e4d3'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp -34'
-src/main.c:81: > 'info depth 3 score cp -57'
-src/main.c:81: > 'info depth 4 score cp 34'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4 c7c6 f3d3 d8d3 e4d3'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 294377 btime 288688 movestogo 33'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 5 score cp 182'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove c8e6'
-src/main.c:81: > 'info string pondering d3h7'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp 185'
-src/main.c:81: > 'info depth 3 score cp 182'
-src/main.c:81: > 'info depth 4 score cp 336'
-src/main.c:81: > 'info depth 5 score cp 399'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4 c7c6 f3d3 d8d3 e4d3 c8e6 d3c4'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 291145 btime 288235 movestogo 32'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:509: Search stopped
-src/main.c:81: > 'info depth 2 score cp 327'
-src/main.c:81: > 'info depth 3 score cp 282'
-src/main.c:81: > 'info depth 4 score cp 298'
-src/main.c:81: > 'info depth 5 score cp 473'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove e6c4'
-src/main.c:81: > 'info string pondering d2d3'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp 298'
-src/main.c:81: > 'info depth 3 score cp 473'
-src/main.c:81: > 'info depth 4 score cp 508'
-src/main.c:81: > 'info depth 5 score cp 585'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4 c7c6 f3d3 d8d3 e4d3 c8e6 d3c4 e6c4 d2d3'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 290553 btime 288070 movestogo 31'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 6 score cp 589'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove c4a6'
-src/main.c:81: > 'info string pondering b2b4'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp 460'
-src/main.c:81: > 'info depth 3 score cp 589'
-src/main.c:81: > 'info depth 4 score cp 589'
-src/main.c:81: > 'info depth 5 score cp 774'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4 c7c6 f3d3 d8d3 e4d3 c8e6 d3c4 e6c4 d2d3 c4a6 b2b4'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 285117 btime 284871 movestogo 30'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 6 score cp 811'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove e8c8'
-src/main.c:81: > 'info string pondering c1b2'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp 787'
-src/main.c:81: > 'info depth 3 score cp 774'
-src/main.c:81: > 'info depth 4 score cp 811'
-src/main.c:81: > 'info depth 5 score cp 796'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4 c7c6 f3d3 d8d3 e4d3 c8e6 d3c4 e6c4 d2d3 c4a6 b2b4 e8c8 c1b2'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 281386 btime 282224 movestogo 29'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-02: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove b2b4'
-src/main.c:81: > 'info string pondering e8c8'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp -589'
-src/main.c:81: > 'info depth 3 score cp -589'
-src/main.c:81: > 'info depth 4 score cp -774'
-src/main.c:164: < 'position startpos moves e2e4 b8c6 f1d3 c6e5 g1f3 e5f3 d1f3 d7d5 e1g1 d5e4 d3e4 c7c6 f3d3 d8d3 e4d3 c8e6 d3c4 e6c4 d2d3 c4a6 b2b4 e8c8'
-src/main.c:164: < 'isready'
-src/main.c:81: > 'readyok'
-src/main.c:164: < 'go wtime 285117 btime 282224 movestogo 29'
-src/main.c:193: state = THINKING_ON_OUR_TIME
-src/main.c:81: > 'info depth 5 score cp -811'
-src/main.c:502: Thinking for too long, playing
-src/main.c:509: Search stopped
-src/main.c:81: > 'bestmove c1b2'
-src/main.c:81: > 'info string pondering d8e8'
-src/main.c:197: state = THINKING_ON_THEIR_TIME
-src/main.c:81: > 'info depth 2 score cp -274'
-src/main.c:81: > 'info depth 3 score cp -311'
-src/main.c:81: > 'info depth 4 score cp -296'
-src/main.c:81: > 'info depth 5 score cp -304'
-src/main.c:81: > 'info depth 6 score cp -280'
+src/main.c:165: < 'uci'
+src/main.c:82: > 'id name checkmate.exe'
+src/main.c:82: > 'id author amel-fou mapatenk mwijnsma'
+src/main.c:82: > 'uciok'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'ucinewgame'
+src/main.c:165: < 'position startpos'
+src/main.c:165: < 'position startpos moves e2e4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 300000 btime 300000 movestogo 40'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 55'
+src/main.c:82: > 'info depth 3 score cp 107'
+src/main.c:82: > 'info depth 4 score cp 49'
+src/main.c:82: > 'info depth 5 score cp 124'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b8c6'
+src/main.c:82: > 'info string pondering b1c3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 49'
+src/main.c:82: > 'info depth 3 score cp 124'
+src/main.c:82: > 'info depth 4 score cp 33'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 298791 btime 299594 movestogo 39'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 147'
+src/main.c:82: > 'info depth 3 score cp 222'
+src/main.c:82: > 'info depth 4 score cp 131'
+src/main.c:82: > 'info depth 5 score cp 207'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e7e6'
+src/main.c:82: > 'info string pondering b1c3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 112'
+src/main.c:82: > 'info depth 3 score cp 207'
+src/main.c:82: > 'info depth 4 score cp 130'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 298032 btime 298458 movestogo 38'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 5 score cp 165'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b7b6'
+src/main.c:82: > 'info string pondering d2d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 130'
+src/main.c:82: > 'info depth 3 score cp 165'
+src/main.c:82: > 'info depth 4 score cp 104'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 296260 btime 296864 movestogo 37'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 203'
+src/main.c:82: > 'info depth 3 score cp 278'
+src/main.c:82: > 'info depth 4 score cp 206'
+src/main.c:82: > 'info depth 5 score cp 226'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c6e5'
+src/main.c:82: > 'info string pondering f3e2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 206'
+src/main.c:82: > 'info depth 3 score cp 226'
+src/main.c:82: > 'info depth 4 score cp 175'
+src/main.c:82: > 'info depth 5 score cp 193'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 293564 btime 295169 movestogo 36'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 428'
+src/main.c:82: > 'info depth 3 score cp 463'
+src/main.c:82: > 'info depth 4 score cp 454'
+src/main.c:82: > 'info depth 5 score cp 414'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e5c4'
+src/main.c:82: > 'info string pondering d2d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 465'
+src/main.c:82: > 'info depth 3 score cp 414'
+src/main.c:82: > 'info depth 4 score cp 346'
+src/main.c:82: > 'info depth 5 score cp 381'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 291543 btime 294080 movestogo 35'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 454'
+src/main.c:82: > 'info depth 3 score cp 482'
+src/main.c:82: > 'info depth 4 score cp 468'
+src/main.c:82: > 'info depth 5 score cp 468'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c8b7'
+src/main.c:82: > 'info string pondering f4c4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 468'
+src/main.c:82: > 'info depth 3 score cp 468'
+src/main.c:82: > 'info depth 4 score cp 591'
+src/main.c:82: > 'info depth 5 score cp 591'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 287673 btime 292879 movestogo 34'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 667'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b7g2'
+src/main.c:82: > 'info string pondering e1d1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 686'
+src/main.c:82: > 'info depth 3 score cp 702'
+src/main.c:82: > 'info depth 4 score cp 667'
+src/main.c:82: > 'info depth 5 score cp 667'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 285653 btime 292460 movestogo 33'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 738'
+src/main.c:82: > 'info depth 3 score cp 773'
+src/main.c:82: > 'info depth 4 score cp 732'
+src/main.c:82: > 'info depth 5 score cp 767'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g2h1'
+src/main.c:82: > 'info string pondering g1f3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 732'
+src/main.c:82: > 'info depth 3 score cp 767'
+src/main.c:82: > 'info depth 4 score cp 729'
+src/main.c:82: > 'info depth 5 score cp 764'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 282961 btime 291442 movestogo 32'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 870'
+src/main.c:82: > 'info depth 3 score cp 857'
+src/main.c:82: > 'info depth 4 score cp 886'
+src/main.c:82: > 'info depth 5 score cp 886'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f7f5'
+src/main.c:82: > 'info string pondering e5f6'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 886'
+src/main.c:82: > 'info depth 3 score cp 886'
+src/main.c:82: > 'info depth 4 score cp 824'
+src/main.c:82: > 'info depth 5 score cp 860'
+src/main.c:82: > 'info depth 6 score cp 809'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 280858 btime 290475 movestogo 31'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1035'
+src/main.c:82: > 'info depth 3 score cp 1070'
+src/main.c:82: > 'info depth 4 score cp 1040'
+src/main.c:82: > 'info depth 5 score cp 1045'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f5e4'
+src/main.c:82: > 'info string pondering e1f1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1040'
+src/main.c:82: > 'info depth 3 score cp 1045'
+src/main.c:82: > 'info depth 4 score cp 1080'
+src/main.c:82: > 'info depth 5 score cp 1099'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 278400 btime 290166 movestogo 30'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1074'
+src/main.c:82: > 'info depth 3 score cp 1109'
+src/main.c:82: > 'info depth 4 score cp 1061'
+src/main.c:82: > 'info depth 5 score cp 1061'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d8h4'
+src/main.c:82: > 'info string pondering d3e4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1061'
+src/main.c:82: > 'info depth 3 score cp 1061'
+src/main.c:82: > 'info depth 4 score cp 1116'
+src/main.c:82: > 'info depth 5 score cp 1250'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 274878 btime 289922 movestogo 29'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1167'
+src/main.c:82: > 'info depth 3 score cp 1357'
+src/main.c:82: > 'info depth 4 score cp 1368'
+src/main.c:82: > 'info depth 5 score cp 1400'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e8c8'
+src/main.c:82: > 'info string pondering d3e4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1376'
+src/main.c:82: > 'info depth 3 score cp 1400'
+src/main.c:82: > 'info depth 4 score cp 1375'
+src/main.c:82: > 'info depth 5 score cp 1399'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 274077 btime 289500 movestogo 28'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1098'
+src/main.c:82: > 'info depth 3 score cp 1098'
+src/main.c:82: > 'info depth 4 score cp 1098'
+src/main.c:82: > 'info depth 5 score cp 1105'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e4d3'
+src/main.c:82: > 'info string pondering e2d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1081'
+src/main.c:82: > 'info depth 3 score cp 1105'
+src/main.c:82: > 'info depth 4 score cp 1125'
+src/main.c:82: > 'info depth 5 score cp 1153'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 272713 btime 289314 movestogo 27'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 1148'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d7d6'
+src/main.c:82: > 'info string pondering c1d2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1159'
+src/main.c:82: > 'info depth 3 score cp 1183'
+src/main.c:82: > 'info depth 4 score cp 1148'
+src/main.c:82: > 'info depth 5 score cp 1166'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 270301 btime 286967 movestogo 26'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1561'
+src/main.c:82: > 'info depth 3 score cp 1561'
+src/main.c:82: > 'info depth 4 score cp 1561'
+src/main.c:82: > 'info depth 5 score cp 1561'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d6e5'
+src/main.c:82: > 'info string pondering f4e5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1561'
+src/main.c:82: > 'info depth 3 score cp 1561'
+src/main.c:82: > 'info depth 4 score cp 1587'
+src/main.c:82: > 'info depth 5 score cp 1587'
+src/main.c:82: > 'info depth 6 score cp 1704'
+src/main.c:82: > 'info depth 7 score cp 1704'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 267158 btime 286767 movestogo 25'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1609'
+src/main.c:82: > 'info depth 3 score cp 1626'
+src/main.c:82: > 'info depth 4 score cp 1592'
+src/main.c:82: > 'info depth 5 score cp 1594'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h4d8'
+src/main.c:82: > 'info string pondering d1e2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1592'
+src/main.c:82: > 'info depth 3 score cp 1594'
+src/main.c:82: > 'info depth 4 score cp 1636'
+src/main.c:82: > 'info depth 5 score cp 1636'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 265346 btime 286725 movestogo 24'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1627'
+src/main.c:82: > 'info depth 3 score cp 1611'
+src/main.c:82: > 'info depth 4 score cp 1627'
+src/main.c:82: > 'info depth 5 score cp 1645'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e5e4'
+src/main.c:82: > 'info string pondering d1c1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1604'
+src/main.c:82: > 'info depth 3 score cp 1645'
+src/main.c:82: > 'info depth 4 score cp 1644'
+src/main.c:82: > 'info depth 5 score cp 1661'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 263542 btime 286314 movestogo 23'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1940'
+src/main.c:82: > 'info depth 3 score cp 1940'
+src/main.c:82: > 'info depth 4 score cp 1960'
+src/main.c:82: > 'info depth 5 score cp 1960'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e4e3'
+src/main.c:82: > 'info string pondering c2c3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 1960'
+src/main.c:82: > 'info depth 3 score cp 1960'
+src/main.c:82: > 'info depth 4 score cp 1985'
+src/main.c:82: > 'info depth 5 score cp 1985'
+src/main.c:82: > 'info depth 6 score cp 2148'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 261157 btime 286108 movestogo 22'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2051'
+src/main.c:82: > 'info depth 3 score cp 2051'
+src/main.c:82: > 'info depth 4 score cp 2046'
+src/main.c:82: > 'info depth 5 score cp 2066'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d8d2'
+src/main.c:82: > 'info string pondering e1f1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2046'
+src/main.c:82: > 'info depth 3 score cp 2066'
+src/main.c:82: > 'info depth 4 score cp 2085'
+src/main.c:82: > 'info depth 5 score cp 2088'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 259913 btime 285937 movestogo 21'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 2112'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d2c2'
+src/main.c:82: > 'info string pondering b2b3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2069'
+src/main.c:82: > 'info depth 3 score cp 2088'
+src/main.c:82: > 'info depth 4 score cp 2112'
+src/main.c:82: > 'info depth 5 score cp 2131'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 257524 btime 280615 movestogo 20'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2151'
+src/main.c:82: > 'info depth 3 score cp 2151'
+src/main.c:82: > 'info depth 4 score cp 2211'
+src/main.c:82: > 'info depth 5 score cp 2211'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c2h2'
+src/main.c:82: > 'info string pondering g3e2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2211'
+src/main.c:82: > 'info depth 3 score cp 2211'
+src/main.c:82: > 'info depth 4 score cp 2379'
+src/main.c:82: > 'info depth 5 score cp 2379'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 255883 btime 280330 movestogo 19'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2469'
+src/main.c:82: > 'info depth 3 score cp 2469'
+src/main.c:82: > 'info depth 4 score cp 2517'
+src/main.c:82: > 'info depth 5 score cp 2517'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h1f3'
+src/main.c:82: > 'info string pondering g3e4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2517'
+src/main.c:82: > 'info depth 3 score cp 2517'
+src/main.c:82: > 'info depth 4 score cp 2613'
+src/main.c:82: > 'info depth 5 score cp 2613'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 254591 btime 280152 movestogo 18'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2563'
+src/main.c:82: > 'info depth 3 score cp 2563'
+src/main.c:82: > 'info depth 4 score cp 2602'
+src/main.c:82: > 'info depth 5 score cp 2602'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h2g2'
+src/main.c:82: > 'info string pondering f1e1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2602'
+src/main.c:82: > 'info depth 3 score cp 2602'
+src/main.c:82: > 'info depth 4 score cp 2611'
+src/main.c:82: > 'info depth 5 score cp 2631'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 253064 btime 279944 movestogo 17'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 2853'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g2g1'
+src/main.c:82: > 'info string pondering g3f1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2383'
+src/main.c:82: > 'info depth 3 score cp 2383'
+src/main.c:82: > 'info depth 4 score cp 2853'
+src/main.c:82: > 'info depth 5 score cp 2853'
+src/main.c:82: > 'info depth 6 score cp 2869'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 249338 btime 279888 movestogo 16'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 7 score cp 2876'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e3e2'
+src/main.c:82: > 'info string pondering e1d2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2853'
+src/main.c:82: > 'info depth 3 score cp 2853'
+src/main.c:82: > 'info depth 4 score cp 2869'
+src/main.c:82: > 'info depth 5 score cp 2876'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 247868 btime 278312 movestogo 15'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 2874'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e2f1r'
+src/main.c:82: > 'info string pondering a1f1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2869'
+src/main.c:82: > 'info depth 3 score cp 2876'
+src/main.c:82: > 'info depth 4 score cp 2874'
+src/main.c:82: > 'info depth 5 score cp 2908'
+src/main.c:82: > 'info depth 6 score cp 2926'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 246745 btime 277124 movestogo 14'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 7 score cp 2961'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g1f1'
+src/main.c:82: > 'info string pondering f4f5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2879'
+src/main.c:82: > 'info depth 3 score cp 2879'
+src/main.c:82: > 'info depth 4 score cp 2876'
+src/main.c:82: > 'info depth 5 score cp 2908'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 245483 btime 275275 movestogo 13'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2895'
+src/main.c:82: > 'info depth 3 score cp 2895'
+src/main.c:82: > 'info depth 4 score cp 2905'
+src/main.c:82: > 'info depth 5 score cp 2931'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f3d5'
+src/main.c:82: > 'info string pondering c2c3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2931'
+src/main.c:82: > 'info depth 3 score cp 2931'
+src/main.c:82: > 'info depth 4 score cp 2933'
+src/main.c:82: > 'info depth 5 score cp 2960'
+src/main.c:82: > 'info depth 6 score cp 2974'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 242423 btime 275048 movestogo 12'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 2942'
+src/main.c:82: > 'info depth 3 score cp 2963'
+src/main.c:82: > 'info depth 4 score cp 3039'
+src/main.c:82: > 'info depth 5 score cp 3049'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f8b4'
+src/main.c:82: > 'info string pondering a2a3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3049'
+src/main.c:82: > 'info depth 3 score cp 3049'
+src/main.c:82: > 'info depth 4 score cp 3051'
+src/main.c:82: > 'info depth 5 score cp 3116'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 241044 btime 274860 movestogo 11'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3117'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f1e2'
+src/main.c:82: > 'info string pondering c2b1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3051'
+src/main.c:82: > 'info depth 3 score cp 3079'
+src/main.c:82: > 'info depth 4 score cp 3117'
+src/main.c:82: > 'info depth 5 score cp 3172'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 240101 btime 274572 movestogo 10'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3051'
+src/main.c:82: > 'info depth 3 score cp 3074'
+src/main.c:82: > 'info depth 4 score cp 3153'
+src/main.c:82: > 'info depth 5 score cp 3153'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b4a3'
+src/main.c:82: > 'info string pondering c1b1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3153'
+src/main.c:82: > 'info depth 3 score cp 3153'
+src/main.c:82: > 'info depth 4 score cp 3191'
+src/main.c:82: > 'info depth 5 score cp 3220'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 239225 btime 274386 movestogo 9'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3201'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g8e7'
+src/main.c:82: > 'info string pondering f4f5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3165'
+src/main.c:82: > 'info depth 3 score cp 3220'
+src/main.c:82: > 'info depth 4 score cp 3201'
+src/main.c:82: > 'info depth 5 score cp 3238'
+src/main.c:82: > 'info depth 6 score cp 3228'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 234456 btime 273349 movestogo 8'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3220'
+src/main.c:82: > 'info depth 3 score cp 3220'
+src/main.c:82: > 'info depth 4 score cp 3229'
+src/main.c:82: > 'info depth 5 score cp 3243'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h8f8'
+src/main.c:82: > 'info string pondering f4f5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3229'
+src/main.c:82: > 'info depth 3 score cp 3243'
+src/main.c:82: > 'info depth 4 score cp 3233'
+src/main.c:82: > 'info depth 5 score cp 3296'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 233463 btime 273095 movestogo 7'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3240'
+src/main.c:82: > 'info depth 3 score cp 3269'
+src/main.c:82: > 'info depth 4 score cp 3250'
+src/main.c:82: > 'info depth 5 score cp 3284'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f8f4'
+src/main.c:82: > 'info string pondering b1a1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3250'
+src/main.c:82: > 'info depth 3 score cp 3284'
+src/main.c:82: > 'info depth 4 score cp 3281'
+src/main.c:82: > 'info depth 5 score cp 3322'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 232557 btime 272803 movestogo 6'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3303'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c8d7'
+src/main.c:82: > 'info string pondering a1b1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3274'
+src/main.c:82: > 'info depth 3 score cp 3322'
+src/main.c:82: > 'info depth 4 score cp 3303'
+src/main.c:82: > 'info depth 5 score cp 3315'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 231649 btime 270945 movestogo 5'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3334'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f4c4'
+src/main.c:82: > 'info string pondering b1a1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3296'
+src/main.c:82: > 'info depth 3 score cp 3315'
+src/main.c:82: > 'info depth 4 score cp 3334'
+src/main.c:82: > 'info depth 5 score cp 3341'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 230938 btime 268481 movestogo 4'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3322'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d7d6'
+src/main.c:82: > 'info string pondering a1b1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3322'
+src/main.c:82: > 'info depth 3 score cp 3341'
+src/main.c:82: > 'info depth 4 score cp 3322'
+src/main.c:82: > 'info depth 5 score cp 3329'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 230206 btime 266462 movestogo 3'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3348'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d6e5'
+src/main.c:82: > 'info string pondering b1a1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3310'
+src/main.c:82: > 'info depth 3 score cp 3329'
+src/main.c:82: > 'info depth 4 score cp 3348'
+src/main.c:82: > 'info depth 5 score cp 3354'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 229338 btime 264675 movestogo 2'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3335'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove a3d6'
+src/main.c:82: > 'info string pondering a1b1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3348'
+src/main.c:82: > 'info depth 3 score cp 3354'
+src/main.c:82: > 'info depth 4 score cp 3335'
+src/main.c:82: > 'info depth 5 score cp 3401'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 528602 btime 262964 movestogo 1'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3420'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h7h5'
+src/main.c:82: > 'info string pondering b1a1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3334'
+src/main.c:82: > 'info depth 3 score cp 3401'
+src/main.c:82: > 'info depth 4 score cp 3420'
+src/main.c:82: > 'info depth 5 score cp 3523'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 527761 btime 560999 movestogo 40'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3504'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h5h4'
+src/main.c:82: > 'info string pondering a1b1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3420'
+src/main.c:82: > 'info depth 3 score cp 3523'
+src/main.c:82: > 'info depth 4 score cp 3504'
+src/main.c:82: > 'info depth 5 score cp 3510'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 526681 btime 559537 movestogo 39'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3529'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h4h3'
+src/main.c:82: > 'info string pondering b1a1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3504'
+src/main.c:82: > 'info depth 3 score cp 3510'
+src/main.c:82: > 'info depth 4 score cp 3529'
+src/main.c:82: > 'info depth 5 score cp 3705'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 525560 btime 558323 movestogo 38'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 3686'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h3h2'
+src/main.c:82: > 'info string pondering a1b1'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3529'
+src/main.c:82: > 'info depth 3 score cp 3705'
+src/main.c:82: > 'info depth 4 score cp 3686'
+src/main.c:82: > 'info depth 5 score cp 4128'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 524355 btime 557114 movestogo 37'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4128'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e2e1'
+src/main.c:82: > 'info string pondering b1b2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3486'
+src/main.c:82: > 'info depth 3 score cp 4129'
+src/main.c:82: > 'info depth 4 score cp 4128'
+src/main.c:82: > 'info depth 5 score cp 4156'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 522966 btime 555153 movestogo 36'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4181'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c4f4'
+src/main.c:82: > 'info string pondering b2c2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3462'
+src/main.c:82: > 'info depth 3 score cp 4156'
+src/main.c:82: > 'info depth 4 score cp 4181'
+src/main.c:82: > 'info depth 5 score cp 4213'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 521982 btime 553259 movestogo 35'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4232'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e7g6'
+src/main.c:82: > 'info string pondering c2d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 3433'
+src/main.c:82: > 'info depth 3 score cp 4207'
+src/main.c:82: > 'info depth 4 score cp 4232'
+src/main.c:82: > 'info depth 5 score cp 4267'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 520299 btime 550216 movestogo 34'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4226'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h2h1q'
+src/main.c:82: > 'info string pondering d3c2'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4232'
+src/main.c:82: > 'info depth 3 score cp 4267'
+src/main.c:82: > 'info depth 4 score cp 4226'
+src/main.c:82: > 'info depth 5 score cp 4291'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 519051 btime 548705 movestogo 33'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4285'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f4f2'
+src/main.c:82: > 'info string pondering c2d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4189'
+src/main.c:82: > 'info depth 3 score cp 4235'
+src/main.c:82: > 'info depth 4 score cp 4233'
+src/main.c:82: > 'info depth 5 score cp 4257'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 518112 btime 545222 movestogo 32'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4257'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e5f4'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4233'
+src/main.c:82: > 'info depth 3 score cp 4257'
+src/main.c:82: > 'info depth 4 score cp 4257'
+src/main.c:82: > 'info depth 5 score cp 4281'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 517105 btime 544343 movestogo 31'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4279'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f4g3'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4257'
+src/main.c:82: > 'info depth 3 score cp 4281'
+src/main.c:82: > 'info depth 4 score cp 4279'
+src/main.c:82: > 'info depth 5 score cp 4295'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 516203 btime 541951 movestogo 30'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4294'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g6f4'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4237'
+src/main.c:82: > 'info depth 3 score cp 4292'
+src/main.c:82: > 'info depth 4 score cp 4294'
+src/main.c:82: > 'info depth 5 score cp 4318'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 515301 btime 537791 movestogo 29'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4316'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f4g2'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4294'
+src/main.c:82: > 'info depth 3 score cp 4318'
+src/main.c:82: > 'info depth 4 score cp 4316'
+src/main.c:82: > 'info depth 5 score cp 4338'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 514415 btime 537079 movestogo 28'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4340'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g2e3'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4316'
+src/main.c:82: > 'info depth 3 score cp 4338'
+src/main.c:82: > 'info depth 4 score cp 4340'
+src/main.c:82: > 'info depth 5 score cp 4355'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 513218 btime 534478 movestogo 27'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4353'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d5f3'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4340'
+src/main.c:82: > 'info depth 3 score cp 4355'
+src/main.c:82: > 'info depth 4 score cp 4353'
+src/main.c:82: > 'info depth 5 score cp 4367'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 512301 btime 530813 movestogo 26'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4365'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove d6f4'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4353'
+src/main.c:82: > 'info depth 3 score cp 4367'
+src/main.c:82: > 'info depth 4 score cp 4365'
+src/main.c:82: > 'info depth 5 score cp 4380'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 511489 btime 527371 movestogo 25'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4378'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f2e2'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4365'
+src/main.c:82: > 'info depth 3 score cp 4380'
+src/main.c:82: > 'info depth 4 score cp 4378'
+src/main.c:82: > 'info depth 5 score cp 4392'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 510387 btime 524539 movestogo 24'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4385'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h1h3'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4378'
+src/main.c:82: > 'info depth 3 score cp 4392'
+src/main.c:82: > 'info depth 4 score cp 4385'
+src/main.c:82: > 'info depth 5 score cp 4400'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 508844 btime 522164 movestogo 23'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4389'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c7c5'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4371'
+src/main.c:82: > 'info depth 3 score cp 4391'
+src/main.c:82: > 'info depth 4 score cp 4389'
+src/main.c:82: > 'info depth 5 score cp 4424'
+src/main.c:82: > 'info depth 6 score cp 4426'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 507692 btime 520046 movestogo 22'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 7 score cp 4440'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c5c4'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4389'
+src/main.c:82: > 'info depth 3 score cp 4424'
+src/main.c:82: > 'info depth 4 score cp 4426'
+src/main.c:82: > 'info depth 5 score cp 4440'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 506795 btime 515457 movestogo 21'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 4438'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c4c3'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4426'
+src/main.c:82: > 'info depth 3 score cp 4440'
+src/main.c:82: > 'info depth 4 score cp 4438'
+src/main.c:82: > 'info depth 5 score cp 5275'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 505762 btime 514908 movestogo 20'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5276'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c3c2'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 4438'
+src/main.c:82: > 'info depth 3 score cp 5275'
+src/main.c:82: > 'info depth 4 score cp 5276'
+src/main.c:82: > 'info depth 5 score cp 5322'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 504943 btime 512385 movestogo 19'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5320'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c2c1q'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5276'
+src/main.c:82: > 'info depth 3 score cp 5322'
+src/main.c:82: > 'info depth 4 score cp 5320'
+src/main.c:82: > 'info depth 5 score cp 5334'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 503984 btime 509610 movestogo 18'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5330'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove a7a5'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5204'
+src/main.c:82: > 'info depth 3 score cp 5218'
+src/main.c:82: > 'info depth 4 score cp 5220'
+src/main.c:82: > 'info depth 5 score cp 5297'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 503295 btime 506476 movestogo 17'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5295'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove a5a4'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5207'
+src/main.c:82: > 'info depth 3 score cp 5297'
+src/main.c:82: > 'info depth 4 score cp 5295'
+src/main.c:82: > 'info depth 5 score cp 5309'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 502733 btime 503528 movestogo 16'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5299'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove a4a3'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5295'
+src/main.c:82: > 'info depth 3 score cp 5309'
+src/main.c:82: > 'info depth 4 score cp 5299'
+src/main.c:82: > 'info depth 5 score cp 5741'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 501833 btime 500214 movestogo 15'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5739'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove a3a2'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5299'
+src/main.c:82: > 'info depth 3 score cp 5741'
+src/main.c:82: > 'info depth 4 score cp 5739'
+src/main.c:82: > 'info depth 5 score cp 6108'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 500744 btime 497297 movestogo 14'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6110'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c1c7'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5295'
+src/main.c:82: > 'info depth 3 score cp 6108'
+src/main.c:82: > 'info depth 4 score cp 6110'
+src/main.c:82: > 'info depth 5 score cp 6124'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 499465 btime 494346 movestogo 13'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6122'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove a2a1q'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6110'
+src/main.c:82: > 'info depth 3 score cp 6124'
+src/main.c:82: > 'info depth 4 score cp 6122'
+src/main.c:82: > 'info depth 5 score cp 6136'
+src/main.c:82: > 'info depth 6 score cp 6138'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 498272 btime 490637 movestogo 12'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 7 score cp 6156'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove a1c1'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6012'
+src/main.c:82: > 'info depth 3 score cp 6026'
+src/main.c:82: > 'info depth 4 score cp 6028'
+src/main.c:82: > 'info depth 5 score cp 6046'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 497333 btime 486771 movestogo 11'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6044'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e1f2'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6028'
+src/main.c:82: > 'info depth 3 score cp 6046'
+src/main.c:82: > 'info depth 4 score cp 6044'
+src/main.c:82: > 'info depth 5 score cp 6060'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 496526 btime 482948 movestogo 10'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6062'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c1h1'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6030'
+src/main.c:82: > 'info depth 3 score cp 6060'
+src/main.c:82: > 'info depth 4 score cp 6062'
+src/main.c:82: > 'info depth 5 score cp 6076'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 495672 btime 479820 movestogo 9'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6074'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c7c1'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6062'
+src/main.c:82: > 'info depth 3 score cp 6076'
+src/main.c:82: > 'info depth 4 score cp 6074'
+src/main.c:82: > 'info depth 5 score cp 6083'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 494680 btime 475981 movestogo 8'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6082'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove c1e1'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6074'
+src/main.c:82: > 'info depth 3 score cp 6083'
+src/main.c:82: > 'info depth 4 score cp 6082'
+src/main.c:82: > 'info depth 5 score cp 6091'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 493881 btime 473102 movestogo 7'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6083'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h1g1'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6071'
+src/main.c:82: > 'info depth 3 score cp 6085'
+src/main.c:82: > 'info depth 4 score cp 6083'
+src/main.c:82: > 'info depth 5 score cp 6089'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 490338 btime 470118 movestogo 6'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6091'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g1h2'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6083'
+src/main.c:82: > 'info depth 3 score cp 6089'
+src/main.c:82: > 'info depth 4 score cp 6091'
+src/main.c:82: > 'info depth 5 score cp 6093'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 489515 btime 469991 movestogo 5'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6083'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e6e5'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6091'
+src/main.c:82: > 'info depth 3 score cp 6093'
+src/main.c:82: > 'info depth 4 score cp 6083'
+src/main.c:82: > 'info depth 5 score cp 6105'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 488790 btime 467398 movestogo 4'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6091'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e5e4'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6072'
+src/main.c:82: > 'info depth 3 score cp 6105'
+src/main.c:82: > 'info depth 4 score cp 6091'
+src/main.c:82: > 'info depth 5 score cp 6093'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 488075 btime 467059 movestogo 3'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6091'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove f3h5'
+src/main.c:82: > 'info string pondering d4e4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5956'
+src/main.c:82: > 'info depth 3 score cp 5958'
+src/main.c:82: > 'info depth 4 score cp 5956'
+src/main.c:82: > 'info depth 5 score cp 5958'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 486590 btime 466545 movestogo 2'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5956'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h5f3'
+src/main.c:82: > 'info string pondering e4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5960'
+src/main.c:82: > 'info depth 3 score cp 5975'
+src/main.c:82: > 'info depth 4 score cp 5956'
+src/main.c:82: > 'info depth 5 score cp 5961'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 785736 btime 464920 movestogo 1'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5951'
+src/main.c:82: > 'info depth 3 score cp 5956'
+src/main.c:82: > 'info depth 4 score cp 5958'
+src/main.c:82: > 'info depth 5 score cp 5970'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove g7g6'
+src/main.c:82: > 'info string pondering d4d3'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5955'
+src/main.c:82: > 'info depth 3 score cp 5970'
+src/main.c:82: > 'info depth 4 score cp 5951'
+src/main.c:82: > 'info depth 5 score cp 5956'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 785102 btime 764588 movestogo 40'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 5956'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b6b5'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5949'
+src/main.c:82: > 'info depth 3 score cp 5956'
+src/main.c:82: > 'info depth 4 score cp 5956'
+src/main.c:82: > 'info depth 5 score cp 6023'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3 b6b5 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 784308 btime 761632 movestogo 39'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6023'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b5b4'
+src/main.c:82: > 'info string pondering d4c5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5926'
+src/main.c:82: > 'info depth 3 score cp 6023'
+src/main.c:82: > 'info depth 4 score cp 6023'
+src/main.c:82: > 'info depth 5 score cp 6050'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3 b6b5 d3d4 b5b4 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 783632 btime 758638 movestogo 38'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 5964'
+src/main.c:82: > 'info depth 3 score cp 6091'
+src/main.c:82: > 'info depth 4 score cp 6070'
+src/main.c:82: > 'info depth 5 score cp 6077'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b4b3'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6070'
+src/main.c:82: > 'info depth 3 score cp 6077'
+src/main.c:82: > 'info depth 4 score cp 6069'
+src/main.c:82: > 'info depth 5 score cp 6886'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3 b6b5 d3d4 b5b4 d4d3 b4b3 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 783036 btime 758347 movestogo 37'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6884'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove b3b2'
+src/main.c:82: > 'info string pondering d4c5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6047'
+src/main.c:82: > 'info depth 3 score cp 6886'
+src/main.c:82: > 'info depth 4 score cp 6884'
+src/main.c:82: > 'info depth 5 score cp 6881'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3 b6b5 d3d4 b5b4 d4d3 b4b3 d3d4 b3b2 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 780816 btime 754457 movestogo 36'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6082'
+src/main.c:82: > 'info depth 3 score cp 6886'
+src/main.c:82: > 'info depth 4 score cp 6884'
+src/main.c:82: > 'info depth 5 score cp 6881'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e1h1'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6070'
+src/main.c:82: > 'info depth 3 score cp 6881'
+src/main.c:82: > 'info depth 4 score cp 6835'
+src/main.c:82: > 'info depth 5 score cp 6901'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3 b6b5 d3d4 b5b4 d4d3 b4b3 d3d4 b3b2 d4d3 e1h1 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 778367 btime 754092 movestogo 35'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6884'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h1e1'
+src/main.c:82: > 'info string pondering d4c5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6047'
+src/main.c:82: > 'info depth 3 score cp 6886'
+src/main.c:82: > 'info depth 4 score cp 6884'
+src/main.c:82: > 'info depth 5 score cp 6881'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3 b6b5 d3d4 b5b4 d4d3 b4b3 d3d4 b3b2 d4d3 e1h1 d3d4 h1e1 d4d3'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 776071 btime 752006 movestogo 34'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:604: Search stopped
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6082'
+src/main.c:82: > 'info depth 3 score cp 6886'
+src/main.c:82: > 'info depth 4 score cp 6884'
+src/main.c:82: > 'info depth 5 score cp 6881'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove e1h1'
+src/main.c:82: > 'info string pondering d3d4'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:82: > 'info depth 2 score cp 6070'
+src/main.c:82: > 'info depth 3 score cp 6881'
+src/main.c:82: > 'info depth 4 score cp 6835'
+src/main.c:82: > 'info depth 5 score cp 6901'
+src/main.c:165: < 'position startpos moves e2e4 b8c6 f1c4 e7e6 b1c3 b7b6 d1f3 c6e5 f3f4 e5c4 e4e5 c8b7 f4c4 b7g2 c4g4 g2h1 c3e4 f7f5 g4e2 f5e4 d2d3 d8h4 e1d1 e8c8 f2f3 e4d3 e2d3 d7d6 f3f4 d6e5 d3d8 h4d8 c1d2 e5e4 g1e2 e4e3 d1e1 d8d2 e1f1 d2c2 e2g3 c2h2 f1e1 h1f3 e1f1 h2g2 f1e1 g2g1 g3f1 e3e2 e1d2 e2f1r a1f1 g1f1 d2c2 f3d5 b2b4 f8b4 a2a3 f1e2 c2c1 b4a3 c1b1 g8e7 b1a1 h8f8 a1b1 f8f4 b1a1 c8d7 a1b1 f4c4 b1a1 d7d6 a1b1 d6e5 b1a1 a3d6 a1b1 h7h5 b1a1 h5h4 a1b1 h4h3 b1a1 h3h2 a1b1 e2e1 b1b2 c4f4 b2c2 e7g6 c2d3 h2h1q d3c2 f4f2 c2d3 e5f4 d3d4 f4g3 d4d3 g6f4 d3d4 f4g2 d4d3 g2e3 d3d4 d5f3 d4d3 d6f4 d3d4 f2e2 d4d3 h1h3 d3d4 c7c5 d4d3 c5c4 d3d4 c4c3 d4d3 c3c2 d3d4 c2c1q d4d3 a7a5 d3d4 a5a4 d4d3 a4a3 d3d4 a3a2 d4d3 c1c7 d3d4 a2a1q d4d3 a1c1 d3d4 e1f2 d4d3 c1h1 d3d4 c7c1 d4d3 c1e1 d3d4 h1g1 d4d3 g1h2 d3d4 e6e5 d4d3 e5e4 d3d4 f3h5 d4e4 h5f3 e4d4 g7g6 d4d3 b6b5 d3d4 b5b4 d4d3 b4b3 d3d4 b3b2 d4d3 e1h1 d3d4 h1e1 d4d3 e1h1 d3d4'
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:165: < 'go wtime 775403 btime 751636 movestogo 33'
+src/main.c:194: state = THINKING_ON_OUR_TIME
+src/main.c:82: > 'info depth 6 score cp 6884'
+src/main.c:597: Thinking for too long, playing
+src/main.c:604: Search stopped
+src/main.c:82: > 'bestmove h1e1'
+src/main.c:82: > 'info string pondering d4c5'
+src/main.c:82: > 'info we're dominating the black squares'
+src/main.c:198: state = THINKING_ON_THEIR_TIME
+src/main.c:581: Search started
+src/main.c:165: < 'isready'
+src/main.c:82: > 'readyok'
+src/main.c:82: > 'info depth 2 score cp 6047'
+src/main.c:82: > 'info depth 3 score cp 6886'
+src/main.c:82: > 'info depth 4 score cp 6884'
+src/main.c:82: > 'info depth 5 score cp 6881'
+src/main.c:82: > 'info depth 6 score cp 6877'
