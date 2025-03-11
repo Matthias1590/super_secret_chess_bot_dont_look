@@ -25,7 +25,7 @@
 #define DEBUG true
 // #define DEBUG_POS "r3kbnr/pp2pppp/2p1b3/8/8/3B4/PPPP1PPP/RNB2RK1 w kq - 1 9"
 #define MIN_DEPTH 2
-#define MAX_DEPTH 5
+#define MAX_DEPTH 6
 
 /// DEBUGGING
 
@@ -353,15 +353,42 @@ t_score evaluate(void) {
 	// piece of value x is blocking a piece of value >= x, and is attacked by a piece of value < x
 
 	// Mobility (100 moves is worth a pawn)
-	// BLUNDER: Sacks bishop
-	// r3kbnr/pp2pppp/2p1b3/8/8/3B4/PPPP1PPP/RNB2RK1 w kq - 1 9
-	// score += generate_legal_moves(&g_pos, g_null_moves) * (g_pos.side_to_move == WHITE ? 1 : -1);
+	// // BLUNDER: Sacks bishop
+	// // r3kbnr/pp2pppp/2p1b3/8/8/3B4/PPPP1PPP/RNB2RK1 w kq - 1 9
+	score += generate_legal_moves(&g_pos, g_null_moves) * (g_pos.side_to_move == WHITE ? 1 : -1);
 
 	return score * (g_pos.side_to_move == WHITE ? 1 : -1);
 }
 
+bool is_in_check(struct position *pos) {
+	pos->side_to_move = 1 - pos->side_to_move;
+
+	struct move moves[MAX_MOVES];
+	size_t moves_count = generate_pseudo_legal_moves(pos, moves);
+	for (size_t i = 0; i < moves_count; i++) {
+		if (pos->board[moves[i].to_square] == NO_PIECE) {
+			continue;
+		}
+
+		if (TYPE(pos->board[moves[i].to_square]) == KING) {
+			pos->side_to_move = 1 - pos->side_to_move;
+			return true;
+		}
+	}
+
+	pos->side_to_move = 1 - pos->side_to_move;
+	return false;
+}
+
 bool is_capture(struct position *pos, struct move move) {
 	return pos->board[move.to_square] != NO_PIECE;
+}
+
+bool is_check(struct position *pos, struct move move) {
+	struct position copy = *pos;
+	do_move(&copy, move);
+
+	return is_in_check(&copy);
 }
 
 bool is_quiescence_move(struct position *pos, struct move move) {
@@ -369,8 +396,9 @@ bool is_quiescence_move(struct position *pos, struct move move) {
 		return true;
 	}
 
-	// TODO: Add checks
-	// ...
+	if (is_check(pos, move)) {
+		return true;
+	}
 
 	return false;
 }
@@ -383,9 +411,13 @@ long long score_move(struct position *pos, struct move move) {
 		score += get_piece_value(TYPE(pos->board[move.to_square]));
 	}
 
-	// TODO: Add double check and regular checks
+	if (is_check(pos, move)) {
+		score += 3000;
+	}
+
+	// TODO: Add double check
 	// if (is_double_check(pos, move)) {
-	// 	score += 100;
+	// 	score += ...;
 	// }
 
 	// new piece square value
@@ -481,12 +513,6 @@ t_search_res quiescence(t_score alpha, t_score beta) {
 	return best_res;
 }
 
-bool is_in_check(struct position *pos) {
-	// TODO: Implement
-	(void) pos;
-	return false;
-}
-
 int g_check_counter = 0;
 
 t_search_res negamax(int depth, t_score alpha, t_score beta) {
@@ -507,7 +533,7 @@ t_search_res negamax(int depth, t_score alpha, t_score beta) {
 
 	if (moves_count == 0) {
 		if (is_in_check(&g_pos)) {
-			return search_res(-SCORE_MAX, NO_MOVE, NO_MOVE);
+			return search_res(SCORE_MIN - (100 - depth), NO_MOVE, NO_MOVE);
 		} else {
 			return search_res(0, NO_MOVE, NO_MOVE);
 		}
@@ -526,7 +552,7 @@ t_search_res negamax(int depth, t_score alpha, t_score beta) {
 			best_res.move = moves[i];
 			best_res.next_move = res.move;
 		}
-		if (res.score == SCORE_MAX) {
+		if (res.score >= SCORE_MAX) {
 			break;
 		}
 		if (res.score >= beta) {
@@ -580,7 +606,7 @@ void start_search(void) {
 		last_res = res;
 
 #if DEBUG
-		uci_printf("info depth %d score cp %lld", depth, last_res.score);
+		uci_printf("info depth %d score cp %lld", depth, last_res.score * (g_pos.side_to_move == WHITE ? 1 : -1));
 #endif
 
 		depth++;
@@ -592,7 +618,9 @@ void start_search(void) {
 	} while (!g_cancel);
 
 	ASSERT(depth > MIN_DEPTH || g_discard);
-	ASSERT(!move_eq(last_res.move, NO_MOVE));
+	if (!g_discard) {
+		ASSERT(!move_eq(last_res.move, NO_MOVE));
+	}
 	DEBUGF("Search stopped\n");
 
 	// Rollback position
@@ -721,8 +749,10 @@ void handle_go(char *token, char *store) {
 			restart_search();
 		} else {
 			// If we're here it means we were pondering the correct move.
-			// We're gonna keep thinking for a little while longer and then play
+			// // We're gonna keep thinking for a little while longer and then play
+			// We're gonna play the move we found
 			set_state(THINKING_ON_OUR_TIME);
+			play_found_move();
 		}
 	} break;
 	default: UNREACHABLE();
