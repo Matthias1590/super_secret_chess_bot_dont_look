@@ -2,6 +2,7 @@
 #include "search.h"
 #include "move.h"
 #include "types.h"
+#include "generate.h"
 
 #include <stdlib.h>
 #include <string.h>
@@ -53,6 +54,8 @@ char *get_token(char *string, char *store) {
 }
 
 void uci_position(struct position *pos, char *token, char *store, struct move *last_move) {
+	pos->game_over = false;
+	
 	token = get_token(token, store);
 
 	if (token && !strcmp(token, "startpos")) {
@@ -85,6 +88,10 @@ void uci_position(struct position *pos, char *token, char *store, struct move *l
 		}
 	}
 
+	struct move moves[MAX_MOVES];
+	if (generate_legal_moves(pos, &moves) == 0) {
+		pos->game_over = true;
+	}
 	set_bbs(pos);
 }
 

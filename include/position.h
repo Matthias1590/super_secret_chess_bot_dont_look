@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 /* this struct represents the placement of pieces on a chess board, as well  */
 /* as any additional information such as side to move, castling rights, and  */
@@ -40,6 +41,7 @@ struct position {
 	int en_passant_square;
 
 	uint64_t bbs[2][6];
+	bool game_over;
 };
 
 /* print out information about the position. useful for debugging.           */

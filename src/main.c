@@ -29,6 +29,9 @@
 /// DEBUGGING
 
 #if DEBUG
+	size_t g_dbg_total_ponders = 0;
+	size_t g_dbg_discarded_ponders = 0;
+
 	FILE *g_debug_file = NULL;
 
 	#define ASSERT(condition) \
@@ -467,6 +470,10 @@ t_search_res search_at_depth(int depth) {
 struct move g_pondering_move;
 
 void start_pondering(void) {
+#if DEBUG
+	g_dbg_total_ponders++;
+#endif
+
 	do_move(&g_pos, g_pondering_move);
 	set_state(THINKING_ON_THEIR_TIME);
 	start_search();
@@ -554,7 +561,11 @@ void start_search(void) {
 	}
 }
 
+// This function gets called if we pondered the wrong move
 void restart_search(void) {
+#if DEBUG
+	g_dbg_discarded_ponders++;
+#endif
 	discard_search();
 	set_state(THINKING_ON_OUR_TIME);
 }
@@ -618,13 +629,9 @@ void handle_go(char *token, char *store) {
 		if (!move_eq(g_last_move, g_pondering_move)) {
 			restart_search();
 		} else {
-			// TODO: Maybe just keep thinking for a little bit on top of the pondering.
-			set_state(THINKING_ON_OUR_TIME);
-
 			// If we're here it means we were pondering the correct move.
-			// Cancel the search and play it instantly
-			DEBUGF("Cancel search because we're done pondering and want to play\n", 1);
-			play_found_move();
+			// We're gonna keep thinking for a little while longer and then play
+			set_state(THINKING_ON_OUR_TIME);
 		}
 	} break;
 	default: UNREACHABLE();
@@ -676,9 +683,15 @@ int main(void) {
 	ASSERT(g_debug_file != NULL);
 #endif
 
-	while (true) {
+	while (!g_pos.game_over) {
 		update_state();
 	}
+
+#if DEBUG
+	DEBUGF("Total ponders: %zu\n", g_dbg_total_ponders);
+	DEBUGF("Discarded ponders: %zu\n", g_dbg_discarded_ponders);
+	DEBUGF("Correct ponder percentage: %f\n", 1.0 - (double)g_dbg_discarded_ponders / g_dbg_total_ponders);
+#endif
 
 	return 0;
 }
