@@ -93,6 +93,9 @@ static size_t generate_sliding_move(const struct position *pos, struct move *mov
 }
 
 size_t generate_pseudo_legal_moves(const struct position *pos, struct move *moves) {
+#if false
+	// TODOOOOO: Use bitboards
+#else
 	size_t count = 0;
 	int forward = pos->side_to_move == WHITE ? 1 : -1;
 	int square;
@@ -204,6 +207,7 @@ size_t generate_pseudo_legal_moves(const struct position *pos, struct move *move
 	}
 
 	return count;
+#endif
 }
 
 size_t generate_legal_moves(const struct position *pos, struct move *moves) {

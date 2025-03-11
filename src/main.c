@@ -22,10 +22,15 @@
 
 /// CONFIGURATION
 
-#define DEBUG true
+#define DEBUG false
+#define SECRET true
 // #define DEBUG_POS "r3kbnr/pp2pppp/2p1b3/8/8/3B4/PPPP1PPP/RNB2RK1 w kq - 1 9"
 #define MIN_DEPTH 2
-#define MAX_DEPTH 6
+#define MAX_DEPTH 7
+
+#if DEBUG && SECRET
+	#error "Cannot have debug and secret enabled"
+#endif
 
 /// DEBUGGING
 
@@ -93,6 +98,7 @@ static bool streq(char *a, char *b) {
 	return strcmp(a, b) == 0;
 }
 
+#if DEBUG
 static void fprint_trace(FILE *f) {
     void* callstack[128];
     int frames = backtrace(callstack, 128);
@@ -123,6 +129,7 @@ static void fprint_trace(FILE *f) {
         }
     }
 }
+#endif
 
 /// MAIN CODE
 
@@ -516,7 +523,7 @@ t_search_res quiescence(t_score alpha, t_score beta) {
 int g_check_counter = 0;
 
 t_search_res negamax(int depth, t_score alpha, t_score beta) {
-	if (/* g_check_counter++ % 500 == 0 && */ should_stop_search(depth)) {
+	if (g_check_counter++ % 500 == 0 && should_stop_search(depth)) {
 		return search_res(0, NO_MOVE, NO_MOVE);
 	}
 
