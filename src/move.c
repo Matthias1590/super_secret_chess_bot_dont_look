@@ -50,6 +50,7 @@ void do_move(struct position *pos, struct move move) {
 	int to_rank = RANK(move.to_square);
 	int piece = pos->board[move.from_square];
 	int color = pos->side_to_move;
+	int captured = pos->board[move.to_square];
 	int a1 = SQUARE(FILE_A, RELATIVE(RANK_1, color));
 	int h1 = SQUARE(FILE_H, RELATIVE(RANK_1, color));
 	int a8 = SQUARE(FILE_A, RELATIVE(RANK_8, color));
@@ -114,8 +115,16 @@ void do_move(struct position *pos, struct move move) {
 		break;
 	}
 
-	// TODOOO: Optimize
-	set_bbs(pos);
+	// Remove piece
+	pos->bbs[color][TYPE(piece)] &= ~(1ULL << move.from_square);
+
+	// Remove captured piece
+	if (captured != NO_PIECE) {
+		pos->bbs[1 - color][TYPE(captured)] &= ~(1ULL << move.to_square);
+	}
+
+	// Set piece
+	pos->bbs[color][TYPE(piece)] |= 1ULL << move.to_square;
 }
 
 int is_legal(const struct position *pos, struct move move) {

@@ -45,10 +45,10 @@
 		} while (0)
 	#define UNREACHABLE() ASSERT(false)
 	#define TODO() ASSERT(false)
-	#define DEBUGF(fmt, ...) \
+	#define DEBUGF(...) \
 		do { \
 			fprintf(g_debug_file, "%s:%d: ", __FILE__, __LINE__); \
-			fprintf(g_debug_file, fmt, __VA_ARGS__); \
+			fprintf(g_debug_file, __VA_ARGS__); \
 			fflush(g_debug_file); \
 		} while (0)
 #else
@@ -78,7 +78,7 @@ static void uci_printf(char *format, ...) {
 
 #if DEBUG
     // Print to stderr
-	DEBUGF("> '", 1);
+	DEBUGF("> '");
     vfprintf(g_debug_file, format, args_copy);
 	fprintf(g_debug_file, "'\n");
 	fflush(g_debug_file);
@@ -187,14 +187,14 @@ void set_state(t_state state) {
 	g_state = state;
 	switch (state) {
 	case WAITING_FOR_GO: {
-		DEBUGF("state = WAITING_FOR_GO\n", 1);
+		DEBUGF("state = WAITING_FOR_GO\n");
 	} break;
 	case THINKING_ON_OUR_TIME: {
-		DEBUGF("state = THINKING_ON_OUR_TIME\n", 1);
+		DEBUGF("state = THINKING_ON_OUR_TIME\n");
 		// TODO: Set start_time so we can keep track of how long we've been thinking
 	} break;
 	case THINKING_ON_THEIR_TIME: {
-		DEBUGF("state = THINKING_ON_THEIR_TIME\n", 1);
+		DEBUGF("state = THINKING_ON_THEIR_TIME\n");
 	} break;
 	default: UNREACHABLE();
 	}
@@ -271,9 +271,8 @@ t_score evaluate(void) {
 	// TODO
 	// piece of value x is blocking a piece of value >= x, and is attacked by a piece of value < x
 
-	// Mobility
-	// TODO
-	// score += generate_legal_moves(&g_pos, g_null_moves) * (g_pos.side_to_move == WHITE ? 1 : -1);
+	// Mobility (100 moves is worth a pawn)
+	score += generate_legal_moves(&g_pos, g_null_moves) * (g_pos.side_to_move == WHITE ? 1 : -1);
 
 	return score * (g_pos.side_to_move == WHITE ? 1 : -1);
 }
@@ -401,6 +400,7 @@ t_search_res quiescence(t_score alpha, t_score beta) {
 
 bool is_in_check(struct position *pos) {
 	// TODO: Implement
+	(void) pos;
 	return false;
 }
 
@@ -499,14 +499,14 @@ void start_search(void) {
 		depth++;
 
 		if (g_state == THINKING_ON_OUR_TIME && depth > MAX_DEPTH) {
-			DEBUGF("Thinking for too long, playing\n", 1);
+			DEBUGF("Thinking for too long, playing\n");
 			play_found_move();
 		}
 	} while (!g_cancel);
 
 	ASSERT(depth > MIN_DEPTH || g_discard);
 	ASSERT(!move_eq(last_res.move, NO_MOVE));
-	DEBUGF("Search stopped\n", 1);
+	DEBUGF("Search stopped\n");
 
 	// Rollback position
 	g_pos = g_real_pos;
@@ -518,7 +518,7 @@ void start_search(void) {
 	} else {
 		ASSERT(depth >= MIN_DEPTH);  // We should have searched at least at the min depth
 
-		char buffer[5];
+		char buffer[6];
 
 		buffer[0] = 'a' + FILE(last_res.move.from_square);
 		buffer[1] = '1' + RANK(last_res.move.from_square);
