@@ -1,5 +1,5 @@
 NAME	:= chessbot
-CFLAGS	:= -Wall -Wextra -g -O3
+CFLAGS	:= -Wall -Wextra -g -Ofast -flto -march=native
 # CFLAGS := -Wall -Wextra -pedantic -std=c89 -O3 -flto -march=native
 
 HEADERS := $(wildcard include/*.h)

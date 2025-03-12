@@ -22,9 +22,9 @@
 
 /// CONFIGURATION
 
-#define DEBUG true
+#define DEBUG false
 #define MIN_DEPTH 2
-#define MAX_DEPTH 5
+int MAX_DEPTH = 5;
 
 /// DEBUGGING
 
@@ -92,6 +92,7 @@ static bool streq(char *a, char *b) {
 	return strcmp(a, b) == 0;
 }
 
+#if DEBUG
 static void fprint_trace(FILE *f) {
     void* callstack[128];
     int frames = backtrace(callstack, 128);
@@ -122,6 +123,7 @@ static void fprint_trace(FILE *f) {
         }
     }
 }
+#endif
 
 /// MAIN CODE
 
@@ -400,7 +402,13 @@ t_search_res quiescence(t_score alpha, t_score beta) {
 }
 
 bool is_in_check(struct position *pos) {
-	// TODO: Implement
+	struct move moves[MAX_MOVES];
+	size_t moves_count = generate_pseudo_legal_moves(pos, moves);
+	for (size_t i = 0; i < moves_count; i++) {
+		if (TYPE(pos->board[moves[i].to_square]) == KING) {
+			return true;
+		}
+	}
 	return false;
 }
 
@@ -518,7 +526,7 @@ void start_search(void) {
 	} else {
 		ASSERT(depth >= MIN_DEPTH);  // We should have searched at least at the min depth
 
-		char buffer[5];
+		char buffer[6];
 
 		buffer[0] = 'a' + FILE(last_res.move.from_square);
 		buffer[1] = '1' + RANK(last_res.move.from_square);
@@ -614,7 +622,11 @@ void handle_go(char *token, char *store) {
 		}
 	}
 
-	(void)info;  // TODO: Use info
+	// if we have less than 10 seconds left, we switch the max depth to 3
+	if (info.time[g_pos.side_to_move] < 10000) {
+		printf("info blitz mode activated\n");
+		MAX_DEPTH = 3;
+	}
 
 	switch (g_state) {
 	case WAITING_FOR_GO: {
