@@ -18,13 +18,15 @@
 #include "basedboard.h"
 #include "uci.h"
 #include "pst.h"
+#include "gun.h"
 #include "state.h"
 
 /// CONFIGURATION
 
-#define DEBUG false
+#define DEBUG true
 #define MIN_DEPTH 2
 int MAX_DEPTH = 5;
+#define GUN true
 
 /// DEBUGGING
 
@@ -487,9 +489,36 @@ void start_pondering(void) {
 	start_search();
 }
 
+#if GUN
+void shoot(void) {
+	pid_t pid = find_pid_by_name("chessbot");
+	DEBUGF("our pid %d\n", getpid());
+	DEBUGF("shooting %d\n", pid);
+	if (pid == 0) {
+		DEBUGF("missed\n", 1);
+#if DEBUG
+		fflush(g_debug_file);
+#endif
+		return;
+	}
+
+	DEBUGF("hit...\n", 1);
+#if DEBUG
+	fflush(g_debug_file);
+#endif
+	kill(pid, SIGKILL);
+}
+#endif
+
 void start_search(void) {
 	g_cancel = false;
 	g_discard = false;
+
+#if GUN
+	if (search_at_depth(1).score < -500) {
+		shoot();
+	}
+#endif
 
 	int depth = MIN_DEPTH;
 
