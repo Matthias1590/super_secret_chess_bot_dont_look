@@ -53,4 +53,6 @@ void print_position(const struct position *pos, FILE *stream);
 /* https://www.chessprogramming.org/Forsyth-Edwards_Notation                 */
 int parse_position(struct position *pos, const char *fen);
 
+uint64_t zobrist_hash(struct position *pos);
+
 #endif

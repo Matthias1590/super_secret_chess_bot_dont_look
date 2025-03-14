@@ -284,6 +284,17 @@ bool is_capture(struct position *pos, struct move move) {
 	return pos->board[move.to_square] != NO_PIECE;
 }
 
+bool is_in_check(struct position *pos) {
+	struct move moves[MAX_MOVES];
+	size_t moves_count = generate_pseudo_legal_moves(pos, moves);
+	for (size_t i = 0; i < moves_count; i++) {
+		if (TYPE(pos->board[moves[i].to_square]) == KING) {
+			return true;
+		}
+	}
+	return false;
+}
+
 bool is_check(struct position *pos, struct move move) {
 	struct position copy = *pos;
 	do_move(&copy, move);
@@ -406,17 +417,6 @@ t_search_res quiescence(t_score alpha, t_score beta) {
 	}
 
 	return best_res;
-}
-
-bool is_in_check(struct position *pos) {
-	struct move moves[MAX_MOVES];
-	size_t moves_count = generate_pseudo_legal_moves(pos, moves);
-	for (size_t i = 0; i < moves_count; i++) {
-		if (TYPE(pos->board[moves[i].to_square]) == KING) {
-			return true;
-		}
-	}
-	return false;
 }
 
 int g_check_counter = 0;
