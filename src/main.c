@@ -71,18 +71,18 @@ static void uci_printf(char *format, ...) {
     va_start(args, format);
 	va_copy(args_copy, args);
 
-    // Print to stdout
-    vfprintf(stdout, format, args);
-	fprintf(stdout, "\n");
-	fflush(stdout);
-
 #if DEBUG
-    // Print to stderr
+    // Print to deubg file
 	DEBUGF("> '", 1);
     vfprintf(g_debug_file, format, args_copy);
 	fprintf(g_debug_file, "'\n");
 	fflush(g_debug_file);
 #endif
+
+    // Print to stdout
+    vfprintf(stdout, format, args);
+	fprintf(stdout, "\n");
+	fflush(stdout);
 
     va_end(args);
     va_end(args_copy);
@@ -494,9 +494,47 @@ void start_pondering(void) {
 	start_search();
 }
 
+typedef struct {
+	uint64_t hash;
+	uint32_t from;
+	uint32_t to;
+} t_opening;
+
+t_opening opening_book[94272];
+
+__attribute__((constructor))
+void load_openings(void) {
+	FILE *file = fopen("out.bin", "rb");
+	ASSERT(file != NULL);
+
+	size_t count = fread(opening_book, sizeof(t_opening), 94272, file);
+
+	fclose(file);
+}
+
+bool get_opening_move(struct move *move) {
+	uint64_t hash = zobrist_hash(&g_real_pos);
+	for (size_t i = 0; i < 94272; i++) {
+		if (opening_book[i].hash == hash) {
+			move->from_square = opening_book[i].from;
+			move->to_square = opening_book[i].to;
+			move->promotion_type = NO_TYPE;
+			return true;
+		}
+	}
+	return false;
+}
+
 void start_search(void) {
 	g_cancel = false;
 	g_discard = false;
+
+	struct move opening_move;
+	if (get_opening_move(&opening_move)) {
+		uci_printf("bestmove %c%c%c%c", 'a' + FILE(opening_move.from_square), '1' + RANK(opening_move.from_square), 'a' + FILE(opening_move.to_square), '1' + RANK(opening_move.to_square));
+		set_state(WAITING_FOR_GO);
+		return;
+	}
 
 	int depth = MIN_DEPTH;
 
@@ -513,7 +551,7 @@ void start_search(void) {
 
 		depth++;
 
-		if (g_state == THINKING_ON_OUR_TIME && depth > MAX_DEPTH) {
+		if (g_state == THINKING_ON_OUR_TIME && depth > MIN_DEPTH && depth > MAX_DEPTH) {
 			DEBUGF("Thinking for too long, playing\n", 1);
 			play_found_move();
 		}
@@ -629,6 +667,10 @@ void handle_go(char *token, char *store) {
 		}
 	}
 
+	// if we have less than 30 seconds left, we switch the max depth to 4
+	if (info.time[g_pos.side_to_move] < 30000) {
+		MAX_DEPTH = 4;
+	}
 	// if we have less than 10 seconds left, we switch the max depth to 3
 	if (info.time[g_pos.side_to_move] < 10000) {
 		printf("info blitz mode activated\n");
@@ -697,6 +739,15 @@ void update_state(void) {
 }
 
 int main(void) {
+	// parse_position(&g_pos, "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1");
+	// struct move move;
+	// if (get_opening_move(&move)) {
+	// 	printf("bestmove %c%c%c%c\n", 'a' + FILE(move.from_square), '1' + RANK(move.from_square), 'a' + FILE(move.to_square), '1' + RANK(move.to_square));
+	// 	return 0;
+	// }
+	// printf("no move\n");
+	// return 0;
+
 #if DEBUG
 	g_debug_file = fopen("debug.log", "w");
 	ASSERT(g_debug_file != NULL);
