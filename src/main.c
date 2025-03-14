@@ -22,7 +22,7 @@
 
 /// CONFIGURATION
 
-#define DEBUG false
+#define DEBUG true
 #define MIN_DEPTH 2
 int MAX_DEPTH = 5;
 
@@ -284,13 +284,20 @@ bool is_capture(struct position *pos, struct move move) {
 	return pos->board[move.to_square] != NO_PIECE;
 }
 
+bool is_check(struct position *pos, struct move move) {
+	struct position copy = *pos;
+	do_move(&copy, move);
+	return is_in_check(&copy);
+}
+
 bool is_quiescence_move(struct position *pos, struct move move) {
 	if (is_capture(pos, move)) {
 		return true;
 	}
 
-	// TODO: Add checks
-	// ...
+	if (is_check(pos, move)) {
+		return true;
+	}
 
 	return false;
 }
